@@ -1,1 +1,54 @@
-/* No CSS *//*# sourceMappingURL=index.css.map */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background: url("../img/hero-desktop.jpg") no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: "moonbright";
+  src: url("../font/moonbrightdemo-1ggn2-webfont.woff2") format("woff2"), url("../font/moonbrightdemo-1ggn2-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+#container {
+  font-family: "moonbright", Arial;
+  font-weight: normal;
+  font-style: normal;
+}
+
+#container #nav-container ul {
+  text-align: center;
+  font-weight: 800;
+}
+
+#container #nav-container ul .nav-not-selected {
+  color: #beb6b6;
+}
+
+#container #nav-container ul #nav-home {
+  color: white;
+}
+
+#container #nav-container ul li {
+  display: inline-block;
+  font-size: 25px;
+  margin: 75px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+#container h1 {
+  font-size: 100px;
+  color: #d3e3e4;
+  text-align: center;
+  margin-top: -30px;
+  font-weight: 400;
+}
+/*# sourceMappingURL=index.css.map */

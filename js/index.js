@@ -18,19 +18,41 @@ window.addEventListener("scroll", () => {
   // Getting innerHeight of window to use as default when
   // changing color of nav
   var innerHeightOfWindow = window.innerHeight;
+  var secondInnerHight = innerHeight * 2;
+  var thirdInnerHight = innerHeight * 3;
   var topYoffsett = window.pageYOffset;
-  if (topYoffsett >= innerHeightOfWindow - 40) {
-    navHome.classList.add("nav-not-selected");
-    navHome.classList.remove("nav-selected");
-    navWhere.classList.add("nav-selected");
-    navWhere.classList.remove("nav-not-selected");
 
+  if (topYoffsett >= thirdInnerHight - 40) {
+    changeColorNav(
+      navContact,
+      "nav-dark-selected",
+      "nav-dark-not-selected",
+      "nav-selected",
+      "nav-not-selected"
+    );
+  } else if (topYoffsett >= secondInnerHight - 40) {
+    changeColorNav(
+      navWishlist,
+      "nav-selected",
+      "nav-not-selected",
+      "nav-dark-selected",
+      "nav-dark-not-selected"
+    );
+  } else if (topYoffsett >= innerHeightOfWindow - 40) {
     changeColorNav(
       navWhere,
       "nav-dark-selected",
       "nav-dark-not-selected",
       "nav-selected",
       "nav-not-selected"
+    );
+  } else if (topYoffsett < innerHeightOfWindow - 40) {
+    changeColorNav(
+      navHome,
+      "nav-selected",
+      "nav-not-selected",
+      "nav-dark-selected",
+      "nav-dark-not-selected"
     );
   }
 });

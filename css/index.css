@@ -133,4 +133,10 @@ html {
   background: url("../img/where-desktop.jpg") no-repeat center center;
   background-size: cover;
 }
+
+#corona-container {
+  background: #bdc6b7;
+  background: -webkit-gradient(linear, left top, right top, color-stop(35%, #bdc6b7), to(#979d86));
+  background: linear-gradient(90deg, #bdc6b7 35%, #979d86 100%);
+}
 /*# sourceMappingURL=index.css.map */

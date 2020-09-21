@@ -153,3 +153,12 @@ html {
   background: url("../img/where-desktop.jpg") no-repeat center center;
   background-size: cover;
 }
+
+#corona-container {
+  background: rgb(189, 198, 183);
+  background: linear-gradient(
+    90deg,
+    rgba(189, 198, 183, 1) 35%,
+    rgba(151, 157, 134, 1) 100%
+  );
+}

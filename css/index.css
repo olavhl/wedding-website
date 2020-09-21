@@ -51,14 +51,31 @@ html {
   position: fixed;
   text-align: center;
   width: 100%;
+  z-index: 10;
 }
 
 #hero-container #nav-container ul .nav-not-selected {
   color: #beb6b6;
 }
 
+#hero-container #nav-container ul .nav-not-selected:hover {
+  color: #e4dede;
+}
+
 #hero-container #nav-container ul .nav-selected {
   color: white;
+}
+
+#hero-container #nav-container ul .nav-dark-selected {
+  color: #000;
+}
+
+#hero-container #nav-container ul .nav-dark-not-selected {
+  color: #646464;
+}
+
+#hero-container #nav-container ul .nav-dark-not-selected:hover {
+  color: #444444;
 }
 
 #hero-container #nav-container ul li {

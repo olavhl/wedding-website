@@ -1,6 +1,10 @@
 $text-base-color: rgb(255, 255, 255);
 $text-secondary-color: #beb6b6;
+$text-hover-color: #e4dede;
 $text-title-color: #d3e3e4;
+$text-dark-base-color: #000;
+$text-dark-second-color: rgb(100, 100, 100);
+$text-dark-hover-color: rgb(68, 68, 68);
 
 * {
   margin: 0;
@@ -59,18 +63,33 @@ html {
 
     ul {
       font-weight: 800;
-      // Position is set to relative until it changes to
-      // fixed as soon as Yoffsett is 100vh
       position: fixed;
       text-align: center;
       width: 100%;
+      z-index: 10;
 
       .nav-not-selected {
         color: $text-secondary-color;
       }
 
+      .nav-not-selected:hover {
+        color: $text-hover-color;
+      }
+
       .nav-selected {
         color: $text-base-color;
+      }
+
+      .nav-dark-selected {
+        color: $text-dark-base-color;
+      }
+
+      .nav-dark-not-selected {
+        color: $text-dark-second-color;
+      }
+
+      .nav-dark-not-selected:hover {
+        color: $text-dark-hover-color;
       }
 
       li {

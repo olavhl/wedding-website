@@ -1,54 +1,105 @@
 * {
   margin: 0;
   padding: 0;
-}
-
-html {
-  background: url("../img/hero-desktop.jpg") no-repeat center center fixed;
-  background-size: cover;
-  height: 100%;
-  overflow: hidden;
+  font-family: "Samsung Sharp Sans Regular";
+  font-style: normal;
 }
 
 @font-face {
-  font-family: "moonbright";
-  src: url("../font/moonbrightdemo-1ggn2-webfont.woff2") format("woff2"), url("../font/moonbrightdemo-1ggn2-webfont.woff") format("woff");
-  font-weight: normal;
+  font-family: "Samsung Sharp Sans Regular";
   font-style: normal;
+  font-weight: normal;
+  src: local("Samsung Sharp Sans Regular"), url("../font/samsung-sharp-sans-cufonfonts-webfont/samsungsharpsans.woff") format("woff");
 }
 
-#container {
-  font-family: "moonbright", Arial;
-  font-weight: normal;
+@font-face {
+  font-family: "Samsung Sharp Sans Medium";
   font-style: normal;
+  font-weight: normal;
+  src: local("Samsung Sharp Sans Medium"), url("../font/samsung-sharp-sans-cufonfonts-webfont/samsungsharpsans-medium.woff") format("woff");
 }
 
-#container #nav-container ul {
+@font-face {
+  font-family: "Samsung Sharp Sans Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Samsung Sharp Sans Bold"), url("../font/samsung-sharp-sans-cufonfonts-webfont/samsungsharpsans-bold.woff") format("woff");
+}
+
+#hero-container {
+  background: url("../img/hero-desktop.jpg") no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#hero-container #nav-container ul {
   text-align: center;
   font-weight: 800;
+  position: relative;
+  z-index: 1;
 }
 
-#container #nav-container ul .nav-not-selected {
+#hero-container #nav-container ul .nav-not-selected {
   color: #beb6b6;
 }
 
-#container #nav-container ul #nav-home {
+#hero-container #nav-container ul #nav-home {
   color: white;
 }
 
-#container #nav-container ul li {
+#hero-container #nav-container ul li {
   display: inline-block;
-  font-size: 25px;
+  font-size: 22px;
   margin: 75px;
   margin-top: 30px;
   cursor: pointer;
 }
 
-#container h1 {
-  font-size: 100px;
-  color: #d3e3e4;
+#hero-container h1 {
+  color: #fff;
   text-align: center;
-  margin-top: -30px;
   font-weight: 400;
+  font-family: "Samsung Sharp Sans Medium";
+  font-size: 100px;
+  position: relative;
+  top: 340px;
+}
+
+#hero-container #cover {
+  height: 100vh;
+  width: 100%;
+  background-color: #000;
+  opacity: 0.35;
+  position: absolute;
+}
+
+#where-container {
+  height: 100vh;
+  background: #bdc6b7;
+  background: -webkit-gradient(linear, left top, right top, color-stop(35%, #bdc6b7), to(#979d86));
+  background: linear-gradient(90deg, #bdc6b7 35%, #979d86 100%);
+}
+
+#where-container #where-info-box {
+  width: 800px;
+  height: 500px;
+  position: relative;
+  margin: auto;
+  top: 25%;
+}
+
+#where-container #where-info-box h2 {
+  color: black;
+  font-size: 40px;
+  text-align: center;
+  position: relative;
+  top: 30px;
+}
+
+#wishlist-container {
+  background: url("../img/where-desktop.jpg") no-repeat center center;
+  background-size: cover;
+  height: 100vh;
 }
 /*# sourceMappingURL=index.css.map */

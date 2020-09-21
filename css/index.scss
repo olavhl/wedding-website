@@ -5,9 +5,18 @@ $text-title-color: #d3e3e4;
 * {
   margin: 0;
   padding: 0;
-  //font-family: "Mako", sans-serif;
   font-family: "Samsung Sharp Sans Regular";
   font-style: normal;
+}
+
+// Scrolling smoothly through the site
+html {
+  scroll-behavior: smooth;
+}
+
+.containers {
+  height: 100vh;
+  width: 100%;
 }
 
 @font-face {
@@ -40,7 +49,6 @@ $text-title-color: #d3e3e4;
 #hero-container {
   background: url("../img/hero-desktop.jpg") no-repeat center center;
   background-size: cover;
-  height: 100vh;
   overflow: hidden;
 
   #nav-container {
@@ -49,16 +57,13 @@ $text-title-color: #d3e3e4;
       font-weight: 800;
       // Position is set to relative until it changes to
       // fixed as soon as Yoffsett is 100vh
-      // position: relative;
-      //top: 85vh;
       position: relative;
-      z-index: 1;
 
       .nav-not-selected {
         color: $text-secondary-color;
       }
 
-      #nav-home {
+      .nav-selected {
         color: $text-base-color;
       }
 
@@ -68,6 +73,11 @@ $text-title-color: #d3e3e4;
         margin: 75px;
         margin-top: 30px;
         cursor: pointer;
+
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
       }
     }
   }
@@ -83,8 +93,6 @@ $text-title-color: #d3e3e4;
   }
 
   #cover {
-    height: 100vh;
-    width: 100%;
     background-color: #000;
     opacity: 0.35;
     position: absolute;
@@ -92,7 +100,6 @@ $text-title-color: #d3e3e4;
 }
 
 #where-container {
-  height: 100vh;
   background: rgb(189, 198, 183);
   background: linear-gradient(
     90deg,
@@ -120,5 +127,4 @@ $text-title-color: #d3e3e4;
 #wishlist-container {
   background: url("../img/where-desktop.jpg") no-repeat center center;
   background-size: cover;
-  height: 100vh;
 }

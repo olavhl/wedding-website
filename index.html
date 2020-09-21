@@ -8,30 +8,49 @@
   </head>
   <body>
     <div id="container">
-      <div id="hero-container">
+      <!-- Home-page AKA hero-container -->
+      <div class="containers" id="hero-container">
+        <!-- Container for navigation -->
         <div id="nav-container">
-          <div id="cover"></div>
+          <div class="containers" id="cover"></div>
           <nav>
             <ul>
-              <li id="nav-home">Hjem</li>
-              <li class="nav-not-selected" id="nav-where">Tid og sted</li>
-              <li class="nav-not-selected" id="nav-giftlist">Ønskeliste</li>
-              <li class="nav-not-selected" id="nav-contact">Kontakt</li>
-              <li class="nav-not-selected" id="nav-corona">Corona-info</li>
+              <li class="nav-selected" id="nav-home">
+                <a href="#hero-container">Hjem</a>
+              </li>
+
+              <li class="nav-not-selected" id="nav-where">
+                <a href="#where-container">Tid og sted</a>
+              </li>
+
+              <li class="nav-not-selected" id="nav-giftlist">
+                <a href="#wishlist-container">Ønskeliste</a>
+              </li>
+
+              <li class="nav-not-selected" id="nav-contact">
+                <a href="#contact-container">Kontakt</a>
+              </li>
+
+              <li class="nav-not-selected" id="nav-corona">
+                <a href="#corona-container">Corona-info</a>
+              </li>
             </ul>
           </nav>
         </div>
 
+        <!-- Title -->
         <h1>Ylva + Olav</h1>
       </div>
 
-      <div id="where-container">
+      <div class="containers" id="where-container">
         <div id="where-info-box">
           <h2>Tid & sted</h2>
         </div>
       </div>
 
-      <div id="wishlist-container"></div>
+      <div class="containers" id="wishlist-container"></div>
+
+      <div class="containers" id="contact-container"></div>
     </div>
 
     <script src="js/index.js" type="text/javascript"></script>

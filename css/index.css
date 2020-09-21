@@ -5,6 +5,15 @@
   font-style: normal;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+.containers {
+  height: 100vh;
+  width: 100%;
+}
+
 @font-face {
   font-family: "Samsung Sharp Sans Regular";
   font-style: normal;
@@ -29,7 +38,6 @@
 #hero-container {
   background: url("../img/hero-desktop.jpg") no-repeat center center;
   background-size: cover;
-  height: 100vh;
   overflow: hidden;
 }
 
@@ -37,14 +45,13 @@
   text-align: center;
   font-weight: 800;
   position: relative;
-  z-index: 1;
 }
 
 #hero-container #nav-container ul .nav-not-selected {
   color: #beb6b6;
 }
 
-#hero-container #nav-container ul #nav-home {
+#hero-container #nav-container ul .nav-selected {
   color: white;
 }
 
@@ -54,6 +61,11 @@
   margin: 75px;
   margin-top: 30px;
   cursor: pointer;
+}
+
+#hero-container #nav-container ul li a {
+  text-decoration: none;
+  color: inherit;
 }
 
 #hero-container h1 {
@@ -67,15 +79,12 @@
 }
 
 #hero-container #cover {
-  height: 100vh;
-  width: 100%;
   background-color: #000;
   opacity: 0.35;
   position: absolute;
 }
 
 #where-container {
-  height: 100vh;
   background: #bdc6b7;
   background: -webkit-gradient(linear, left top, right top, color-stop(35%, #bdc6b7), to(#979d86));
   background: linear-gradient(90deg, #bdc6b7 35%, #979d86 100%);
@@ -100,6 +109,5 @@
 #wishlist-container {
   background: url("../img/where-desktop.jpg") no-repeat center center;
   background-size: cover;
-  height: 100vh;
 }
 /*# sourceMappingURL=index.css.map */

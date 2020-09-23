@@ -105,6 +105,18 @@ html {
         }
       }
     }
+
+    // Tag to create underline animation
+    #nav-underline {
+      width: 150px;
+      border-bottom: 5px solid white;
+      position: fixed;
+      right: 0;
+      left: 0;
+      margin-left: auto;
+      margin-right: auto;
+      transition: left 2s ease-in-out;
+    }
   }
 
   h1 {

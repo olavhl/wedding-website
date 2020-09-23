@@ -12,6 +12,8 @@ var navWhere = document.getElementById("nav-where");
 var navWishlist = document.getElementById("nav-wishlist");
 var navContact = document.getElementById("nav-contact");
 var navCorona = document.getElementById("nav-corona");
+// Underline
+var navUnderline = document.getElementById("nav-underline");
 
 // Function to change the color of the
 window.addEventListener("scroll", () => {
@@ -30,6 +32,7 @@ window.addEventListener("scroll", () => {
       "nav-selected",
       "nav-not-selected"
     );
+    navUnderline.style.left = "75%";
   } else if (topYoffsett >= secondInnerHight - 40) {
     changeColorNav(
       navWishlist,
@@ -54,6 +57,7 @@ window.addEventListener("scroll", () => {
       "nav-dark-selected",
       "nav-dark-not-selected"
     );
+    navUnderline.style.right = "75%";
   }
 });
 

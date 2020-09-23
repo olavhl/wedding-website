@@ -91,6 +91,18 @@ html {
   color: inherit;
 }
 
+#hero-container #nav-container #nav-underline {
+  width: 150px;
+  border-bottom: 5px solid white;
+  position: fixed;
+  right: 0;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-transition: left 2s ease-in-out;
+  transition: left 2s ease-in-out;
+}
+
 #hero-container h1 {
   color: #fff;
   text-align: center;

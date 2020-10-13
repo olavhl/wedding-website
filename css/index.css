@@ -123,7 +123,7 @@ html {
   height: 100vh;
   position: relative;
   margin: auto;
-  top: 20%;
+  top: 15%;
 }
 
 #where-container #where-info-box .where-text-parts {
@@ -147,6 +147,26 @@ html {
 #wishlist-container {
   background: url("../img/where-desktop.jpg") no-repeat center center;
   background-size: cover;
+}
+
+#wishlist-container #wishlist-image-container {
+  position: relative;
+  text-align: center;
+  top: 35%;
+}
+
+#wishlist-container #wishlist-image-container a {
+  text-decoration: none;
+}
+
+#wishlist-container #wishlist-image-container a img {
+  width: 400px;
+  opacity: .7;
+  border-radius: 20px;
+}
+
+#wishlist-container #wishlist-image-container a img:hover {
+  opacity: 1;
 }
 
 #corona-container {

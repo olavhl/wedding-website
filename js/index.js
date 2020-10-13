@@ -1,12 +1,11 @@
-// Declearing variables
-// For containers
+// Declearing variables for containers
 var heroContainer = document.getElementById("hero-container");
 var whereContainer = document.getElementById("where-container");
 var wishlistContainer = document.getElementById("wishlist-container");
 var contactContainer = document.getElementById("contact-container");
 var coronaContainer = document.getElementById("corona-container");
 
-// For navbar
+// Variables for navbar
 var navHome = document.getElementById("nav-home");
 var navWhere = document.getElementById("nav-where");
 var navWishlist = document.getElementById("nav-wishlist");
@@ -33,14 +32,6 @@ window.addEventListener("scroll", () => {
       "nav-dark-selected",
       "nav-dark-not-selected"
     );
-
-      console.log(fourthInnerHight-40 + "Jup");
-      console.log(topYoffsett);
-
-   /* navContact.classList.remove("nav-dark-selected");
-    navContact.classList.add("nav-dark-not-selected");
-    navCorona.classList.add("nav-dark-selected");
-    navCorona.classList.remove("nav-dark-not-selected"); */
   } else if (topYoffsett >= thirdInnerHight - 40) {
     changeColorNav(
       navContact,

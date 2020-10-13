@@ -143,23 +143,32 @@ html {
 }
 
 #where-container {
-
-
   #where-info-box {
     width: 800px;
-    height: 500px;
+    height: 100vh;
     position: relative;
     margin: auto;
-    top: 25%;
+    top: 20%;
 
-    h2 {
-      color: black;
-      font-size: 40px;
-      text-align: center;
-      position: relative;
-      top: 30px;
+    .where-text-parts {
+      margin-top: 40px;
     }
+
+  #where-text {
+      height: 30vh;
+      display: grid;
+      grid-template-columns: auto 2px auto;
+
+      text-align: center;
+
+
+    #where-vertical-line {
+      border-left: 2px solid $text-dark-second-color;
+      height: 250px;
+    }
+
   }
+}
 }
 
 #wishlist-container {

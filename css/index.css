@@ -56,22 +56,27 @@ html {
 
 #hero-container #nav-container ul .nav-not-selected {
   color: #beb6b6;
+  font-size: 22px;
 }
 
 #hero-container #nav-container ul .nav-not-selected:hover {
   color: #e4dede;
+  font-size: 22px;
 }
 
 #hero-container #nav-container ul .nav-selected {
   color: white;
+  font-size: 27px;
 }
 
 #hero-container #nav-container ul .nav-dark-selected {
   color: #000;
+  font-size: 27px;
 }
 
 #hero-container #nav-container ul .nav-dark-not-selected {
   color: #646464;
+  font-size: 22px;
 }
 
 #hero-container #nav-container ul .nav-dark-not-selected:hover {
@@ -91,18 +96,6 @@ html {
   color: inherit;
 }
 
-#hero-container #nav-container #nav-underline {
-  width: 150px;
-  border-bottom: 5px solid white;
-  position: fixed;
-  right: 0;
-  left: 0;
-  margin-left: auto;
-  margin-right: auto;
-  -webkit-transition: left 2s ease-in-out;
-  transition: left 2s ease-in-out;
-}
-
 #hero-container h1 {
   color: #fff;
   text-align: center;
@@ -119,7 +112,7 @@ html {
   position: absolute;
 }
 
-#where-container {
+.where-and-contact-container {
   background: #bdc6b7;
   background: -webkit-gradient(linear, left top, right top, color-stop(35%, #bdc6b7), to(#979d86));
   background: linear-gradient(90deg, #bdc6b7 35%, #979d86 100%);
@@ -147,8 +140,6 @@ html {
 }
 
 #corona-container {
-  background: #bdc6b7;
-  background: -webkit-gradient(linear, left top, right top, color-stop(35%, #bdc6b7), to(#979d86));
-  background: linear-gradient(90deg, #bdc6b7 35%, #979d86 100%);
+  background-color: black;
 }
 /*# sourceMappingURL=index.css.map */

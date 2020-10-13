@@ -70,22 +70,29 @@ html {
 
       .nav-not-selected {
         color: $text-secondary-color;
-      }
+        font-size: 22px;
 
+      }
+      
       .nav-not-selected:hover {
         color: $text-hover-color;
+        font-size: 22px;
       }
-
+      
       .nav-selected {
         color: $text-base-color;
+        font-size: 27px;
       }
 
       .nav-dark-selected {
         color: $text-dark-base-color;
+        font-size: 27px;
       }
 
       .nav-dark-not-selected {
         color: $text-dark-second-color;
+        font-size: 22px;
+
       }
 
       .nav-dark-not-selected:hover {
@@ -106,17 +113,6 @@ html {
       }
     }
 
-    // Tag to create underline animation
-    #nav-underline {
-      width: 150px;
-      border-bottom: 5px solid white;
-      position: fixed;
-      right: 0;
-      left: 0;
-      margin-left: auto;
-      margin-right: auto;
-      transition: left 2s ease-in-out;
-    }
   }
 
   h1 {
@@ -136,13 +132,18 @@ html {
   }
 }
 
-#where-container {
+.where-and-contact-container {
   background: rgb(189, 198, 183);
   background: linear-gradient(
     90deg,
     rgba(189, 198, 183, 1) 35%,
     rgba(151, 157, 134, 1) 100%
   );
+
+}
+
+#where-container {
+
 
   #where-info-box {
     width: 800px;
@@ -167,10 +168,5 @@ html {
 }
 
 #corona-container {
-  background: rgb(189, 198, 183);
-  background: linear-gradient(
-    90deg,
-    rgba(189, 198, 183, 1) 35%,
-    rgba(151, 157, 134, 1) 100%
-  );
+  background-color: black;
 }

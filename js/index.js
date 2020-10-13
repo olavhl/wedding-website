@@ -22,9 +22,26 @@ window.addEventListener("scroll", () => {
   var innerHeightOfWindow = window.innerHeight;
   var secondInnerHight = innerHeight * 2;
   var thirdInnerHight = innerHeight * 3;
+  var fourthInnerHight = innerHeight * 4;
   var topYoffsett = window.pageYOffset;
 
-  if (topYoffsett >= thirdInnerHight - 40) {
+  if (topYoffsett >= fourthInnerHight - 40) {
+    changeColorNav(
+      navCorona,
+      "nav-selected",
+      "nav-not-selected",
+      "nav-dark-selected",
+      "nav-dark-not-selected"
+    );
+
+      console.log(fourthInnerHight-40 + "Jup");
+      console.log(topYoffsett);
+
+   /* navContact.classList.remove("nav-dark-selected");
+    navContact.classList.add("nav-dark-not-selected");
+    navCorona.classList.add("nav-dark-selected");
+    navCorona.classList.remove("nav-dark-not-selected"); */
+  } else if (topYoffsett >= thirdInnerHight - 40) {
     changeColorNav(
       navContact,
       "nav-dark-selected",
@@ -32,7 +49,6 @@ window.addEventListener("scroll", () => {
       "nav-selected",
       "nav-not-selected"
     );
-    navUnderline.style.left = "75%";
   } else if (topYoffsett >= secondInnerHight - 40) {
     changeColorNav(
       navWishlist,
@@ -57,10 +73,10 @@ window.addEventListener("scroll", () => {
       "nav-dark-selected",
       "nav-dark-not-selected"
     );
-    navUnderline.style.right = "75%";
   }
 });
 
+// Function for changing color and size for selected tab in nav
 function changeColorNav(
   selectedId,
   selectedClass,

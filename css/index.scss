@@ -6,23 +6,7 @@ $text-dark-base-color: #000;
 $text-dark-second-color: rgb(100, 100, 100);
 $text-dark-hover-color: rgb(68, 68, 68);
 
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Samsung Sharp Sans Regular";
-  font-style: normal;
-}
-
-// Scrolling smoothly through the site
-html {
-  scroll-behavior: smooth;
-}
-
-.containers {
-  height: 100vh;
-  width: 100%;
-}
-
+// Fonts
 @font-face {
   font-family: "Samsung Sharp Sans Regular";
   font-style: normal;
@@ -50,6 +34,23 @@ html {
       format("woff");
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Samsung Sharp Sans Regular";
+  font-style: normal;
+}
+
+// Scrolling smoothly through the site
+html {
+  scroll-behavior: smooth;
+}
+
+.containers {
+  height: 100vh;
+  width: 100%;
+}
+
 #hero-container {
   background: url("../img/hero-desktop.jpg") no-repeat center center;
   background-size: cover;
@@ -68,13 +69,27 @@ html {
       width: 100%;
       z-index: 10;
 
+      li {
+        display: inline-block;
+        font-size: 22px;
+        margin: 75px;
+        margin-top: 30px;
+        cursor: pointer;
+
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
+      }
+
+    // Classes to use in js to choose selected tab
       .nav-not-selected {
         color: $text-secondary-color;
         font-size: 22px;
 
       }
       
-      .nav-not-selected:hover {q
+      .nav-not-selected:hover {
         color: $text-hover-color;
         font-size: 22px;
       }
@@ -97,19 +112,6 @@ html {
 
       .nav-dark-not-selected:hover {
         color: $text-dark-hover-color;
-      }
-
-      li {
-        display: inline-block;
-        font-size: 22px;
-        margin: 75px;
-        margin-top: 30px;
-        cursor: pointer;
-
-        a {
-          text-decoration: none;
-          color: inherit;
-        }
       }
     }
 

@@ -33,12 +33,20 @@ html {
 .containers {
   height: 100vh;
   width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (100vh)[5];
+      grid-template-rows: repeat(5, 100vh);
+  -ms-grid-columns: (1fr)[7];
+      grid-template-columns: repeat(7, 1fr);
 }
 
 #hero-container {
   background: url("../img/hero-desktop.jpg") no-repeat center center;
   background-size: cover;
   overflow: hidden;
+  -ms-grid-row: 1;
+  grid-row: 1;
 }
 
 #hero-container #nav-container nav {
@@ -104,6 +112,9 @@ html {
   font-size: 100px;
   position: relative;
   top: 340px;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 3;
+  grid-column: 3/6;
 }
 
 #hero-container #cover {
@@ -118,12 +129,20 @@ html {
   background: linear-gradient(90deg, #bdc6b7 35%, #979d86 100%);
 }
 
+#where-container {
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
 #where-container #where-info-box {
   width: 800px;
   height: 100vh;
   position: relative;
   margin: auto;
   top: 15%;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 3;
+  grid-column: 3/6;
 }
 
 #where-container #where-info-box .where-text-parts {
@@ -145,6 +164,8 @@ html {
 }
 
 #wishlist-container {
+  -ms-grid-row: 3;
+  grid-row: 3;
   background: url("../img/where-desktop.jpg") no-repeat center center;
   background-size: cover;
 }
@@ -153,6 +174,9 @@ html {
   position: relative;
   text-align: center;
   top: 35%;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 3;
+  grid-column: 3/6;
 }
 
 #wishlist-container #wishlist-image-container a {
@@ -170,6 +194,8 @@ html {
 }
 
 #corona-container {
+  -ms-grid-row: 5;
+  grid-row: 5;
   background-color: black;
 }
 /*# sourceMappingURL=index.css.map */

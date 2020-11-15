@@ -14,6 +14,12 @@ var navHotel = document.getElementById("nav-hotel");
 var navContact = document.getElementById("nav-contact");
 var navCorona = document.getElementById("nav-corona");
 
+// Variable to add sticky nav
+var stickyNav = document.getElementById("sticky-nav");
+
+// Getting the position of stickyNav
+var sticky = stickyNav.offsetTop;
+
 // Function to change the color of the
 window.addEventListener("scroll", () => {
   // Getting innerHeight of window to use as default when
@@ -24,6 +30,12 @@ window.addEventListener("scroll", () => {
   var fourthInnerHight = innerHeight * 4;
   var fifthInnerHight = innerHeight * 5;
   var topYoffsett = window.pageYOffset;
+
+  if (topYoffsett > sticky) {
+    stickyNav.classList.add("sticky");
+  } else {
+    stickyNav.classList.remove("sticky");
+  }
 
   
   if (topYoffsett >= fifthInnerHight - 40){

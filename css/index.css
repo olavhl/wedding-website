@@ -204,15 +204,19 @@ html {
   grid-row: 3;
   background: url("../img/where-desktop.jpg") no-repeat center center;
   background-size: cover;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (auto)[3];
+      grid-template-rows: repeat(3, auto);
 }
 
 #wishlist-container #wishlist-image-container {
-  position: relative;
   text-align: center;
-  top: 35%;
   -ms-grid-column: 3;
   -ms-grid-column-span: 3;
   grid-column: 3/6;
+  -ms-grid-row: 2;
+  grid-row: 2;
 }
 
 #wishlist-container #wishlist-image-container a {
@@ -272,9 +276,12 @@ html {
   row-gap: 30px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto 3px auto;
-      grid-template-columns: auto 3px auto;
+  -ms-grid-columns: auto 3px auto 3px auto;
+      grid-template-columns: auto 3px auto 3px auto;
   text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #hotel-container #hotels-box p {
@@ -286,16 +293,24 @@ html {
 #hotel-container #hotels-box .hotel-boxes {
   -ms-grid-row: 3;
   grid-row: 3;
-  margin-top: 40px;
+  margin: 0 20px 0 20px;
 }
 
-#hotel-container #hotels-box #hotel-vertical-line {
+#hotel-container #hotels-box .hotel-vertical-line {
   border-left: 2px solid #646464;
   height: 225px;
-  -ms-grid-column: 2;
-  grid-column: 2;
   -ms-grid-row: 3;
   grid-row: 3;
+}
+
+#hotel-container #hotels-box #hotel-vertical-line1 {
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+#hotel-container #hotels-box #hotel-vertical-line2 {
+  -ms-grid-column: 4;
+  grid-column: 4;
 }
 
 #contact-container {

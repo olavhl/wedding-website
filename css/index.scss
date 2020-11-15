@@ -209,18 +209,40 @@ html {
 
       a {
         text-decoration: none;
+        font-family: SamsungMedium;
+        color: white;
+        opacity: .6;
 
-
+        h3 {
+          opacity: .6;
+          font-size: 30px;
+        }
 
       img {
-        width: 400px;
-        opacity: .7;
+        width: 250px;
+        filter: invert(1);
+        opacity: .6;
         border-radius: 20px;
+
         &:hover {
           opacity: 1;
         }
       }
+
+      &:hover {
+        opacity: 1;
+      }
+
+      &:hover h3 {
+        opacity: 1;
+      }
+
+      &:hover img {
+        opacity: 1;
+      }
+
     }
+
   }
 }
 

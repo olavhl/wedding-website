@@ -1,8 +1,27 @@
+@font-face {
+  font-family: SamsungRegular;
+  font-style: normal;
+  font-weight: normal;
+  src: local("Samsung Sharp Sans Regular"), url("../font/samsung-sharp-sans-cufonfonts-webfont/samsungsharpsans.woff") format("woff");
+}
+
+@font-face {
+  font-family: SamsungMedium;
+  font-style: normal;
+  font-weight: normal;
+  src: local("Samsung Sharp Sans Medium"), url("../font/samsung-sharp-sans-cufonfonts-webfont/samsungsharpsans-medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: SamsungBold;
+  font-style: normal;
+  font-weight: normal;
+  src: local("Samsung Sharp Sans Bold"), url("../font/samsung-sharp-sans-cufonfonts-webfont/samsungsharpsans-bold.woff") format("woff");
+}
+
 * {
   margin: 0;
   padding: 0;
-  font-family: "Samsung Sharp Sans Regular";
-  font-style: normal;
 }
 
 html {
@@ -12,82 +31,55 @@ html {
 .containers {
   height: 100vh;
   width: 100%;
-}
-
-@font-face {
-  font-family: "Samsung Sharp Sans Regular";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Samsung Sharp Sans Regular"), url("../font/samsung-sharp-sans-cufonfonts-webfont/samsungsharpsans.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Samsung Sharp Sans Medium";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Samsung Sharp Sans Medium"), url("../font/samsung-sharp-sans-cufonfonts-webfont/samsungsharpsans-medium.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Samsung Sharp Sans Bold";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Samsung Sharp Sans Bold"), url("../font/samsung-sharp-sans-cufonfonts-webfont/samsungsharpsans-bold.woff") format("woff");
+  font-family: SamsungRegular;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (100vh)[6];
+      grid-template-rows: repeat(6, 100vh);
+  -ms-grid-columns: (1fr)[7];
+      grid-template-columns: repeat(7, 1fr);
 }
 
 #hero-container {
   background: url("../img/hero-desktop.jpg") no-repeat center center;
   background-size: cover;
   overflow: hidden;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (auto)[6];
+      grid-template-rows: repeat(6, auto);
+}
+
+#hero-container #nav-container {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 5;
+  grid-column: 2/7;
 }
 
 #hero-container #nav-container nav {
-  width: 100%;
   height: 100px;
 }
 
 #hero-container #nav-container ul {
-  font-weight: 800;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   position: fixed;
-  text-align: center;
-  width: 100%;
+  list-style: none;
   z-index: 10;
-}
-
-#hero-container #nav-container ul .nav-not-selected {
-  color: #beb6b6;
-  font-size: 22px;
-}
-
-#hero-container #nav-container ul .nav-not-selected:hover {
-  color: #e4dede;
-  font-size: 22px;
-}
-
-#hero-container #nav-container ul .nav-selected {
-  color: white;
-  font-size: 27px;
-}
-
-#hero-container #nav-container ul .nav-dark-selected {
-  color: #000;
-  font-size: 27px;
-}
-
-#hero-container #nav-container ul .nav-dark-not-selected {
-  color: #646464;
-  font-size: 22px;
-}
-
-#hero-container #nav-container ul .nav-dark-not-selected:hover {
-  color: #444444;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (150px)[6];
+      grid-template-columns: repeat(6, 150px);
+  margin-top: 30px;
 }
 
 #hero-container #nav-container ul li {
-  display: inline-block;
-  font-size: 22px;
-  margin: 75px;
-  margin-top: 30px;
+  text-align: center;
+  font-size: 17px;
   cursor: pointer;
 }
 
@@ -96,20 +88,51 @@ html {
   color: inherit;
 }
 
+#hero-container #nav-container ul .nav-not-selected {
+  color: #beb6b6;
+}
+
+#hero-container #nav-container ul .nav-not-selected:hover {
+  color: #e4dede;
+}
+
+#hero-container #nav-container ul .nav-selected {
+  color: white;
+  font-family: SamsungMedium;
+}
+
+#hero-container #nav-container ul .nav-dark-selected {
+  color: #000;
+  font-family: SamsungMedium;
+}
+
+#hero-container #nav-container ul .nav-dark-not-selected {
+  color: #646464;
+}
+
+#hero-container #nav-container ul .nav-dark-not-selected:hover {
+  color: #444444;
+}
+
 #hero-container h1 {
   color: #fff;
   text-align: center;
   font-weight: 400;
-  font-family: "Samsung Sharp Sans Medium";
+  font-family: SamsungMedium;
   font-size: 100px;
-  position: relative;
-  top: 340px;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 5;
+  grid-column: 2/7;
+  -ms-grid-row: 5;
+  grid-row: 5;
+  z-index: 2;
 }
 
 #hero-container #cover {
   background-color: #000;
   opacity: 0.35;
   position: absolute;
+  z-index: 1;
 }
 
 .where-and-contact-container {
@@ -118,12 +141,20 @@ html {
   background: linear-gradient(90deg, #bdc6b7 35%, #979d86 100%);
 }
 
+#where-container {
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
 #where-container #where-info-box {
   width: 800px;
   height: 100vh;
   position: relative;
   margin: auto;
   top: 15%;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 3;
+  grid-column: 3/6;
 }
 
 #where-container #where-info-box .where-text-parts {
@@ -145,6 +176,8 @@ html {
 }
 
 #wishlist-container {
+  -ms-grid-row: 3;
+  grid-row: 3;
   background: url("../img/where-desktop.jpg") no-repeat center center;
   background-size: cover;
 }
@@ -153,6 +186,9 @@ html {
   position: relative;
   text-align: center;
   top: 35%;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 3;
+  grid-column: 3/6;
 }
 
 #wishlist-container #wishlist-image-container a {
@@ -170,6 +206,8 @@ html {
 }
 
 #corona-container {
+  -ms-grid-row: 5;
+  grid-row: 5;
   background-color: black;
 }
 /*# sourceMappingURL=index.css.map */

@@ -2,6 +2,7 @@
 var heroContainer = document.getElementById("hero-container");
 var whereContainer = document.getElementById("where-container");
 var wishlistContainer = document.getElementById("wishlist-container");
+var hotelContainer = document.getElementById("hotel-container");
 var contactContainer = document.getElementById("contact-container");
 var coronaContainer = document.getElementById("corona-container");
 
@@ -9,6 +10,7 @@ var coronaContainer = document.getElementById("corona-container");
 var navHome = document.getElementById("nav-home");
 var navWhere = document.getElementById("nav-where");
 var navWishlist = document.getElementById("nav-wishlist");
+var navHotel = document.getElementById("nav-hotel");
 var navContact = document.getElementById("nav-contact");
 var navCorona = document.getElementById("nav-corona");
 
@@ -20,11 +22,22 @@ window.addEventListener("scroll", () => {
   var secondInnerHight = innerHeight * 2;
   var thirdInnerHight = innerHeight * 3;
   var fourthInnerHight = innerHeight * 4;
+  var fifthInnerHight = innerHeight * 5;
   var topYoffsett = window.pageYOffset;
 
-  if (topYoffsett >= fourthInnerHight - 40) {
+  
+  if (topYoffsett >= fifthInnerHight - 40){
     changeColorNav(
       navCorona,
+      "nav-dark-selected",
+      "nav-dark-not-selected",
+      "nav-selected",
+      "nav-not-selected"
+    )
+
+  } else if (topYoffsett >= fourthInnerHight - 40) {
+    changeColorNav(
+      navContact,
       "nav-selected",
       "nav-not-selected",
       "nav-dark-selected",
@@ -33,12 +46,12 @@ window.addEventListener("scroll", () => {
 
   } else if (topYoffsett >= thirdInnerHight - 40) {
     changeColorNav(
-      navContact,
+      navHotel,
       "nav-dark-selected",
       "nav-dark-not-selected",
       "nav-selected",
       "nav-not-selected"
-    );
+    )
 
   } else if (topYoffsett >= secondInnerHight - 40) {
     changeColorNav(

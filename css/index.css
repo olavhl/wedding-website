@@ -135,7 +135,7 @@ html {
   z-index: 1;
 }
 
-.where-and-contact-container {
+.where-hotel-corona-container {
   background: #bdc6b7;
   background: -webkit-gradient(linear, left top, right top, color-stop(35%, #bdc6b7), to(#979d86));
   background: linear-gradient(90deg, #bdc6b7 35%, #979d86 100%);
@@ -251,9 +251,7 @@ html {
   opacity: 1;
 }
 
-#corona-container {
-  -ms-grid-row: 5;
-  grid-row: 5;
-  background-color: black;
+#contact-container {
+  background-color: darkolivegreen;
 }
 /*# sourceMappingURL=index.css.map */

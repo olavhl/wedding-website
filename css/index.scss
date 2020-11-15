@@ -51,6 +51,7 @@ html {
   grid-template-columns: repeat(7, 1fr);
 }
 
+// Properties for Home
 #hero-container {
   background: url("../img/hero-desktop.jpg") no-repeat center center;
   background-size: cover;
@@ -140,6 +141,7 @@ html {
   }
 }
 
+// Background for where-, hotel- and corona-section
 .where-hotel-corona-container {
   background: rgb(189, 198, 183);
   background: linear-gradient(
@@ -150,6 +152,7 @@ html {
 
 }
 
+// Properties for where
 #where-container {
   grid-row: 2;
   display: grid;
@@ -196,6 +199,7 @@ html {
   }
 }
 
+// Properties for wishlist
 #wishlist-container {
   grid-row: 3;
   background: url("../img/where-desktop.jpg") no-repeat center center;
@@ -246,6 +250,7 @@ html {
   }
 }
 
+// Properties for hotel
 #hotel-container {
   grid-row: 4;
   display: grid;

@@ -251,6 +251,53 @@ html {
   opacity: 1;
 }
 
+#hotel-container {
+  -ms-grid-row: 4;
+  grid-row: 4;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (auto)[8];
+      grid-template-rows: repeat(8, auto);
+}
+
+#hotel-container #hotels-box {
+  width: 800px;
+  height: 30vh;
+  margin: auto;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 5;
+  grid-column: 2/7;
+  -ms-grid-row: 3;
+  grid-row: 3;
+  row-gap: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 3px auto;
+      grid-template-columns: auto 3px auto;
+  text-align: center;
+}
+
+#hotel-container #hotels-box p {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+}
+
+#hotel-container #hotels-box .hotel-boxes {
+  -ms-grid-row: 3;
+  grid-row: 3;
+  margin-top: 40px;
+}
+
+#hotel-container #hotels-box #hotel-vertical-line {
+  border-left: 2px solid #646464;
+  height: 225px;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 3;
+  grid-row: 3;
+}
+
 #contact-container {
   background-color: darkolivegreen;
 }

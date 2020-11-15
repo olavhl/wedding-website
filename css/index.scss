@@ -246,6 +246,40 @@ html {
   }
 }
 
+#hotel-container {
+  grid-row: 4;
+  display: grid;
+  grid-template-rows: repeat(8, auto);
+
+  #hotels-box {
+    width: 800px;
+    height: 30vh;
+    margin: auto;
+    grid-column: 2/7;
+    grid-row: 3;
+    row-gap: 30px;
+    display: grid;
+    grid-template-columns: auto 3px auto;
+    text-align: center;
+
+    p {
+      grid-column: 1/4;
+    }
+
+    .hotel-boxes {
+      grid-row: 3;
+      margin-top: 40px;
+    }
+
+    #hotel-vertical-line {
+      border-left: 2px solid $text-dark-second-color;
+      height: 225px;
+      grid-column: 2;
+      grid-row: 3;
+    }
+  }
+}
+
 #contact-container {
   background-color: darkolivegreen;
 }

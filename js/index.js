@@ -11,8 +11,6 @@ var navWhere = document.getElementById("nav-where");
 var navWishlist = document.getElementById("nav-wishlist");
 var navContact = document.getElementById("nav-contact");
 var navCorona = document.getElementById("nav-corona");
-// Underline
-var navUnderline = document.getElementById("nav-underline");
 
 // Function to change the color of the
 window.addEventListener("scroll", () => {
@@ -32,6 +30,7 @@ window.addEventListener("scroll", () => {
       "nav-dark-selected",
       "nav-dark-not-selected"
     );
+
   } else if (topYoffsett >= thirdInnerHight - 40) {
     changeColorNav(
       navContact,
@@ -40,6 +39,7 @@ window.addEventListener("scroll", () => {
       "nav-selected",
       "nav-not-selected"
     );
+
   } else if (topYoffsett >= secondInnerHight - 40) {
     changeColorNav(
       navWishlist,
@@ -48,6 +48,7 @@ window.addEventListener("scroll", () => {
       "nav-dark-selected",
       "nav-dark-not-selected"
     );
+
   } else if (topYoffsett >= innerHeightOfWindow - 40) {
     changeColorNav(
       navWhere,
@@ -56,6 +57,7 @@ window.addEventListener("scroll", () => {
       "nav-selected",
       "nav-not-selected"
     );
+
   } else if (topYoffsett < innerHeightOfWindow - 40) {
     changeColorNav(
       navHome,
@@ -84,6 +86,7 @@ function changeColorNav(
       liElements[i].classList.remove(removedClass2);
       liElements[i].classList.remove(removedClass1);
       liElements[i].classList.add(notSelectedClass);
+      liElements[i].style.border = "0";
     } else {
       selectedId.classList.add(selectedClass);
       selectedId.classList.remove(removedClass2);

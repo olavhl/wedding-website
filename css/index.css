@@ -335,4 +335,17 @@ html {
 #contact-container {
   background-color: darkolivegreen;
 }
+
+#corona-container {
+  -ms-grid-rows: (auto)[5];
+      grid-template-rows: repeat(5, auto);
+}
+
+#corona-container #corona-info {
+  -ms-grid-row: 3;
+  grid-row: 3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 3;
+  grid-column: 3/6;
+}
 /*# sourceMappingURL=index.css.map */

@@ -320,3 +320,11 @@ html {
 #contact-container {
   background-color: darkolivegreen;
 }
+
+#corona-container {
+  grid-template-rows: repeat(5, auto);
+  #corona-info {
+    grid-row: 3;
+    grid-column: 3/6;
+  }
+}

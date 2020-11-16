@@ -203,6 +203,7 @@ html {
   width: 100%;
   height: 65px;
   z-index: 9;
+  visibility: hidden;
   background: #bdc6b7;
   background: -webkit-gradient(linear, left top, right top, color-stop(35%, #bdc6b7), to(#979d86));
   background: linear-gradient(90deg, #bdc6b7 35%, #979d86 100%);

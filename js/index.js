@@ -33,8 +33,12 @@ window.addEventListener("scroll", () => {
 
   if (topYoffsett > sticky) {
     stickyNav.classList.add("sticky");
+    stickyNav.style.visibility = "visible";
+    stickyNav.style.position = "fixed";
   } else {
     stickyNav.classList.remove("sticky");
+    stickyNav.style.visibility = "hidden";
+    stickyNav.style.position = "absolute";
   }
 
   

@@ -1,6 +1,6 @@
 @media only screen and (max-width: 600px) {
   #hero-container {
-    background: url("../img/hero-desktop-phone.jpg") no-repeat center center;
+    background: url("../img/hero-phone.jpg") no-repeat center center;
     background-size: cover;
     height: 100vh;
     width: 100%;

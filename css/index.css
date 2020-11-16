@@ -72,14 +72,15 @@ html {
   z-index: 10;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (150px)[6];
-      grid-template-columns: repeat(6, 150px);
+  -ms-grid-columns: (auto)[6];
+      grid-template-columns: repeat(6, auto);
   margin-top: 30px;
 }
 
 #hero-container #nav-container ul li {
   text-align: center;
   font-size: 17px;
+  padding: 20px;
   cursor: pointer;
 }
 

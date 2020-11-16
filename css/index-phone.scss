@@ -1,0 +1,92 @@
+$text-base-color: rgb(255, 255, 255);
+$text-secondary-color: #beb6b6;
+$text-hover-color: #e4dede;
+$text-title-color: #d3e3e4;
+$text-dark-base-color: #000;
+$text-dark-second-color: rgb(100, 100, 100);
+$text-dark-hover-color: rgb(68, 68, 68);
+
+@media only screen and (max-width: 600px) {
+
+    #hero-container {
+        background: url("../img/hero-desktop-phone.jpg") no-repeat center center;
+        height: 812px;
+        width: 100%;
+  
+      #nav-container {
+        display: none;
+      }
+    }
+  
+  
+  
+  
+  
+  #where-container {
+    grid-row: 2;
+    display: grid;
+    grid-template-rows: repeat(8, auto);
+  
+    #where-info-box {
+      width: 300px;
+      height: 30vh;
+      position: relative;
+      margin: auto;
+      grid-column: 2/7;
+      grid-row: 2;
+      row-gap: 30px;
+      display: grid;
+      grid-template-columns: auto 3px auto;
+  
+  
+        iframe {
+            grid-column: 1/4;
+            width:200px;
+            height: 200px;
+            margin: auto;
+        }
+  
+      }
+    }
+  
+    #hotel-container {
+      grid-row: 4;
+      display: grid;
+      grid-template-rows: repeat(8, auto);
+    
+      #hotels-box {
+        width: 100px;
+        height: 30vh;
+        margin: auto;
+        grid-column: 2/7;
+        grid-row: 3;
+        row-gap: 30px;
+        display: none;
+    
+        p {
+          grid-column: 1/4;
+        }
+    
+        .hotel-boxes {
+          grid-row: 3;
+        }
+    
+    
+        .hotel-vertical-line {
+          border-left: 2px solid $text-dark-second-color;
+          height: 225px;
+          grid-row: 3;
+        }
+    
+        #hotel-vertical-line1 {
+          grid-column: 2;
+        }
+    
+        #hotel-vertical-line2 {
+          grid-column: 4;
+        }
+        
+      }
+    }
+  
+  }

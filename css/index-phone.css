@@ -1,0 +1,86 @@
+@media only screen and (max-width: 600px) {
+  #hero-container {
+    background: url("../img/hero-desktop-phone.jpg") no-repeat center center;
+    height: 812px;
+    width: 100%;
+  }
+  #hero-container #nav-container {
+    display: none;
+  }
+  #where-container {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: (auto)[8];
+        grid-template-rows: repeat(8, auto);
+  }
+  #where-container #where-info-box {
+    width: 300px;
+    height: 30vh;
+    position: relative;
+    margin: auto;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 5;
+    grid-column: 2/7;
+    -ms-grid-row: 2;
+    grid-row: 2;
+    row-gap: 30px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto 3px auto;
+        grid-template-columns: auto 3px auto;
+  }
+  #where-container #where-info-box iframe {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+  }
+  #hotel-container {
+    -ms-grid-row: 4;
+    grid-row: 4;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: (auto)[8];
+        grid-template-rows: repeat(8, auto);
+  }
+  #hotel-container #hotels-box {
+    width: 100px;
+    height: 30vh;
+    margin: auto;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 5;
+    grid-column: 2/7;
+    -ms-grid-row: 3;
+    grid-row: 3;
+    row-gap: 30px;
+    display: none;
+  }
+  #hotel-container #hotels-box p {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+  }
+  #hotel-container #hotels-box .hotel-boxes {
+    -ms-grid-row: 3;
+    grid-row: 3;
+  }
+  #hotel-container #hotels-box .hotel-vertical-line {
+    border-left: 2px solid #646464;
+    height: 225px;
+    -ms-grid-row: 3;
+    grid-row: 3;
+  }
+  #hotel-container #hotels-box #hotel-vertical-line1 {
+    -ms-grid-column: 2;
+    grid-column: 2;
+  }
+  #hotel-container #hotels-box #hotel-vertical-line2 {
+    -ms-grid-column: 4;
+    grid-column: 4;
+  }
+}
+/*# sourceMappingURL=index-phone.css.map */

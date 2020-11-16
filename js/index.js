@@ -31,10 +31,16 @@ window.addEventListener("scroll", () => {
   var fifthInnerHight = innerHeight * 5;
   var topYoffsett = window.pageYOffset;
 
+  // Getting width of screen to prevent sticky nav to
+  // show if on phone
+  var offsetWidth = window.innerWidth;
+
   if (topYoffsett > sticky - 40) {
-    stickyNav.classList.add("sticky");
-    stickyNav.style.visibility = "visible";
-    stickyNav.style.position = "fixed";
+    if (offsetWidth > 450){
+      stickyNav.classList.add("sticky");
+      stickyNav.style.visibility = "visible";
+      stickyNav.style.position = "fixed";
+    }
   } else {
     stickyNav.classList.remove("sticky");
     stickyNav.style.visibility = "hidden";

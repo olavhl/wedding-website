@@ -1,10 +1,19 @@
 @media only screen and (max-width: 600px) {
   #hero-container {
     background: url("../img/hero-desktop-phone.jpg") no-repeat center center;
-    height: 812px;
+    background-size: cover;
+    height: 100vh;
     width: 100%;
   }
   #hero-container #nav-container {
+    display: none;
+  }
+  #hero-container h1 {
+    font-size: 45px;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+  #sticky-nav {
     display: none;
   }
   #where-container {
@@ -12,32 +21,33 @@
     grid-row: 2;
     display: -ms-grid;
     display: grid;
-    -ms-grid-rows: (auto)[8];
-        grid-template-rows: repeat(8, auto);
+    -ms-grid-rows: 10% 75% 15%;
+        grid-template-rows: 10% 75% 15%;
+    -ms-grid-columns: 10% 80% 10%;
+        grid-template-columns: 10% 80% 10%;
   }
   #where-container #where-info-box {
     width: 300px;
-    height: 30vh;
-    position: relative;
-    margin: auto;
+    height: 70vh;
     -ms-grid-column: 2;
-    -ms-grid-column-span: 5;
-    grid-column: 2/7;
-    -ms-grid-row: 2;
-    grid-row: 2;
+    grid-column: 2;
     row-gap: 30px;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: auto 3px auto;
-        grid-template-columns: auto 3px auto;
+    -ms-grid-columns: 50% 1% 49%;
+        grid-template-columns: 50% 1% 49%;
+  }
+  #where-container #where-info-box p {
+    font-size: 12px;
   }
   #where-container #where-info-box iframe {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
-    grid-column: 1/4;
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     margin: auto;
+  }
+  #wishlist-container {
+    background: url("../img/where-phone.jpg") no-repeat center center;
+    background-size: cover;
   }
   #hotel-container {
     -ms-grid-row: 4;

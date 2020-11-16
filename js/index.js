@@ -31,7 +31,7 @@ window.addEventListener("scroll", () => {
   var fifthInnerHight = innerHeight * 5;
   var topYoffsett = window.pageYOffset;
 
-  if (topYoffsett > sticky) {
+  if (topYoffsett > sticky - 40) {
     stickyNav.classList.add("sticky");
     stickyNav.style.visibility = "visible";
     stickyNav.style.position = "fixed";
@@ -126,13 +126,13 @@ function changeColorNav(
 
 function changeNavColorGreen() {
   stickyNav.style.opacity = "0.9";
-  stickyNav.style.background = "linear-gradient( 90deg, rgba(189, 198, 183, 1) 35%, rgba(151, 157, 134, 1) 100%)";
+  stickyNav.style.background = "rgb(189, 198, 183)";
   //stickyNav.classList.add("sticky-background-green")
   //stickyNav.classList.remove("sticky-background-black")
 }
 
 function changeNavColorBlack() {
-  stickyNav.style.opacity = "0.5";
+  stickyNav.style.opacity = "0.4";
   stickyNav.style.background = "rgb(0, 0, 0)";
   //stickyNav.classList.add("sticky-background-black")
   //stickyNav.classList.remove("sticky-background-green")

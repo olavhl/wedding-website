@@ -49,6 +49,18 @@
     background: url("../img/where-phone.jpg") no-repeat center center;
     background-size: cover;
   }
+  #wishlist-container #wishlist-image-container {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 5;
+    grid-column: 2/7;
+    -ms-grid-row: 4;
+    grid-row: 4;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  #wishlist-container #wishlist-image-container a img {
+    width: 170px;
+  }
   #hotel-container {
     -ms-grid-row: 4;
     grid-row: 4;

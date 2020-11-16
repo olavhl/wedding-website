@@ -49,8 +49,8 @@ window.addEventListener("scroll", () => {
       "nav-dark-not-selected",
       "nav-selected",
       "nav-not-selected"
-    )
-
+    );
+    changeNavColorGreen();
   } else if (topYoffsett >= fourthInnerHight - 40) {
     changeColorNav(
       navContact,
@@ -59,7 +59,7 @@ window.addEventListener("scroll", () => {
       "nav-dark-selected",
       "nav-dark-not-selected"
     );
-
+    changeNavColorBlack();
   } else if (topYoffsett >= thirdInnerHight - 40) {
     changeColorNav(
       navHotel,
@@ -67,8 +67,8 @@ window.addEventListener("scroll", () => {
       "nav-dark-not-selected",
       "nav-selected",
       "nav-not-selected"
-    )
-
+    );
+    changeNavColorGreen();
   } else if (topYoffsett >= secondInnerHight - 40) {
     changeColorNav(
       navWishlist,
@@ -77,7 +77,7 @@ window.addEventListener("scroll", () => {
       "nav-dark-selected",
       "nav-dark-not-selected"
     );
-
+    changeNavColorBlack();
   } else if (topYoffsett >= innerHeightOfWindow - 40) {
     changeColorNav(
       navWhere,
@@ -86,7 +86,7 @@ window.addEventListener("scroll", () => {
       "nav-selected",
       "nav-not-selected"
     );
-
+    changeNavColorGreen();
   } else if (topYoffsett < innerHeightOfWindow - 40) {
     changeColorNav(
       navHome,
@@ -121,4 +121,19 @@ function changeColorNav(
       selectedId.classList.remove(removedClass2);
     }
   }
+}
+
+
+function changeNavColorGreen() {
+  stickyNav.style.opacity = "0.9";
+  stickyNav.style.background = "linear-gradient( 90deg, rgba(189, 198, 183, 1) 35%, rgba(151, 157, 134, 1) 100%)";
+  //stickyNav.classList.add("sticky-background-green")
+  //stickyNav.classList.remove("sticky-background-black")
+}
+
+function changeNavColorBlack() {
+  stickyNav.style.opacity = "0.5";
+  stickyNav.style.background = "rgb(0, 0, 0)";
+  //stickyNav.classList.add("sticky-background-black")
+  //stickyNav.classList.remove("sticky-background-green")
 }

@@ -204,15 +204,17 @@ html {
   height: 65px;
   z-index: 9;
   visibility: hidden;
-  background: #bdc6b7;
-  background: -webkit-gradient(linear, left top, right top, color-stop(35%, #bdc6b7), to(#979d86));
-  background: linear-gradient(90deg, #bdc6b7 35%, #979d86 100%);
+  -webkit-transition: background 1s ease-in-out, -webkit-box-shadow .7s ease-in-out;
+  transition: background 1s ease-in-out, -webkit-box-shadow .7s ease-in-out;
+  transition: background 1s ease-in-out, box-shadow .7s ease-in-out;
+  transition: background 1s ease-in-out, box-shadow .7s ease-in-out, -webkit-box-shadow .7s ease-in-out;
 }
 
 .sticky {
   position: fixed;
-  opacity: .8;
   top: 0;
+  -webkit-box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
 }
 
 #wishlist-container {

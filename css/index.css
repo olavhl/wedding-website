@@ -1,21 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Samsung Sharp Sans Regular";
-  font-style: normal;
-  overflow: hidden;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-.containers {
-  height: 100vh;
-  width: 100%;
-}
-
-
 @font-face {
   font-family: SamsungRegular;
   font-style: normal;
@@ -82,7 +64,6 @@ html {
 
 .hero-container .nav-container nav {
   height: 100px;
-  display: none;
 }
 
 .hero-container .nav-container ul {
@@ -142,7 +123,6 @@ html {
   color: #fff;
   text-align: center;
   font-weight: 400;
-
   font-family: SamsungMedium;
   font-size: 100px;
   -ms-grid-column: 2;
@@ -372,12 +352,5 @@ html {
   -ms-grid-column: 3;
   -ms-grid-column-span: 3;
   grid-column: 3/6;
-}
-
-#dev-no-scroll {
-  position: absolute;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
 }
 /*# sourceMappingURL=index.css.map */

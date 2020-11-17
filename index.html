@@ -5,33 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ylva & Olav</title>
     <link href="css/index.css" rel="stylesheet" type="text/css" />
+    <link href="css/index-phone.css" rel="stylesheet" type="text/css" />
+    <link href="img/favicon.ico" rel="icon">
   </head>
   <body>
     <div id="container">
       <!-- Home-page AKA hero-container -->
-      <div class="containers" id="hero-container">
+      <div class="containers hero-container" id="hero-container">
+
+        <div class="hamburger-container">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+
+        <!-- Cover to create darker background-img -->
+        <div class="containers" id="cover"></div>
+
         <!-- Container for navigation -->
-        <div id="nav-container">
-          <div class="containers" id="cover"></div>
+        <div class="nav-container" id="nav-container">
           <nav>
             <ul>
-              <li class="nav-selected" id="nav-home">
+              <li class="nav-selected nav-links" id="nav-home">
                 <a href="#hero-container">Hjem</a>
               </li>
 
-              <li class="nav-not-selected" id="nav-where">
+              <li class="nav-not-selected nav-links" id="nav-where">
                 <a href="#where-container">Tid og sted</a>
               </li>
 
-              <li class="nav-not-selected" id="nav-wishlist">
+              <li class="nav-not-selected nav-links" id="nav-wishlist">
                 <a href="#wishlist-container">Ønskeliste</a>
               </li>
 
-              <li class="nav-not-selected" id="nav-contact">
+              <li class="nav-not-selected nav-links" id="nav-hotel">
+                <a href="#hotel-container">Hotell</a>
+              </li>
+
+              <li class="nav-not-selected nav-links" id="nav-contact">
                 <a href="#contact-container">Kontakt</a>
               </li>
 
-              <li class="nav-not-selected" id="nav-corona">
+              <li class="nav-not-selected nav-links" id="nav-corona">
                 <a href="#corona-container">Corona-info</a>
               </li>
             </ul>
@@ -46,17 +61,20 @@
         <h3>Mer info kommer...</h3>
       </div>
 
-      <div class="containers where-and-contact-container" id="where-container">
+      <div id="sticky-nav"></div>
+
+      <!-- Container for Location -->
+      <div class="containers where-hotel-corona-container" id="where-container">
+        
         <div id="where-info-box">
 
           <!-- Creating layout for grids in the site -->
-          <div id="where-text">
           <div class="where-text-parts" id="church">
               <h2>Kirke</h2>
               <br>
-              <p>Vallø kirke</p>
-              <p>Glassverksgata,</p>
-              <p>3150 Tolvsrød</p>
+              <p>Søndre Slagen Kirke</p>
+              <p>Astreaveien 11,</p>
+              <p>3113 Tønsberg</p>
           </div>
 
           <div id="where-vertical-line"></div>
@@ -68,30 +86,76 @@
             <p>Karlsvik gård</p>
             <p>Karlsvikveien 36,</p>
             <p>3150 Tolvsrød</p>
-        </div>
-      </div>
+          </div>
           <iframe
             src="https://www.atlistmaps.com/map/88042756-667d-4e92-8c80-e454a240338f?share=true"
             allow="geolocation"
-            width="100%"
-            height="300px"
             frameborder="0"
             scrolling="no"
+            id="where-iframe"
           ></iframe>
         </div>
       </div>
 
+      <!-- Container for wishlist -->
       <div class="containers" id="wishlist-container">
         <div id="wishlist-image-container">
          <a href="https://www.gavelisten.no/g/5JUZT3Q" target="_blank">
-          <img src="img/gavelisten-logo.png" alt="Gå til gavelisten">
+          <img src="img/logo-gavelisten.png" alt="Gå til gavelisten">
+          <h3>Gavelisten.no</h3>
          </a>
         </div>
       </div>
 
-      <div class="containers where-and-contact-container" id="contact-container"></div>
+      <!-- Container for hotels -->
+      <div class="containers where-hotel-corona-container" id="hotel-container">
+        <div id="hotels-box">
+          
+          <p>Du finner flere fine hoteller i Tønsberg, her er noen av dem: </p>
 
-      <div class="containers" id="corona-container"></div>
+          <div class="hotel-boxes" id="hotel-box1">
+            <h2>Thon Blabla</h2>
+            <br>
+            <p>Denne gata 15</p>
+            <p>0000 Tønsberg</p>
+          </div>
+
+          <!-- Vertical line to split the hotels -->
+          <div class="hotel-vertical-line" id="hotel-vertical-line1"></div>
+
+          <div class="hotel-boxes" id="hotel-box2">
+            <h2>Vandrehjem Blabla</h2>
+            <br>
+            <p>Denne gata 15</p>
+            <p>0000 Tønsberg</p>
+          </div>
+
+          <!-- Vertical line to split the hotels -->
+          <div class="hotel-vertical-line" id="hotel-vertical-line2"></div>
+
+          <div class="hotel-boxes" id="hotel-box3">
+            <h2>Vandrehjem Blabla</h2>
+            <br>
+            <p>Denne gata 15</p>
+            <p>0000 Tønsberg</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Container for Contact-info -->
+      <div class="containers" id="contact-container"></div>
+
+      <!-- Container for Corona -->
+      <div class="containers where-hotel-corona-container" id="corona-container">
+        <div id="corona-info">
+          <p>Vi har satt svarfristen til 1. februar, men har en dyp forståelse for at noen kanskje vil ha behov for å avlyse senere enn dette.</p>
+          <br><br>
+          <p>Per November 2020 er helsemyndighetenes råd om arrangementer og sosiale sammenkomster at det ikke er tillatt å samle mer enn 20 personer.</p>
+          <br>
+          <p>Vi lever i håp om at denne grensen utvides sånn at alle kan være med på festen. </p>
+        </div>
+      </div>
 
     </div>
 

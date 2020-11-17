@@ -47,7 +47,9 @@ window.addEventListener("scroll", () => {
     stickyNav.style.position = "absolute";
   }
 
-  
+
+  // Do this if on a desktop
+  if (offsetWidth > 450){
   if (topYoffsett >= fifthInnerHight - 40){
     changeColorNav(
       navCorona,
@@ -102,6 +104,7 @@ window.addEventListener("scroll", () => {
       "nav-dark-not-selected"
     );
   }
+}
 });
 
 // Function for changing color and size for selected tab in nav

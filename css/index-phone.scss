@@ -8,23 +8,41 @@ $text-dark-hover-color: rgb(68, 68, 68);
 
 @media only screen and (max-width: 600px) {
 
-    #hero-container {
-        // Changing background to taller version
-        background: url("../img/hero-phone.jpg") no-repeat center center;
-        background-size: cover;
-        height: 100vh;
-        width: 100%;
-  
-        // Hiding nav for now
-        #nav-container {
-            display: none;
-        }
+  #hero-container {
+      // Changing background to taller version
+      background: url("../img/hero-phone.jpg") no-repeat center center;
+      background-size: cover;
+      height: 100vh;
+      width: 100%;
 
-        h1 {
-            font-size: 45px;
-            grid-row: 2;
+      // Hamburger-menu
+      #hamburger-container {
+        display: block;
+        position: fixed;
+        width: 50px;
+        height: 30px;
+        top: 15px;
+        right: 15px;
+        z-index: 11;
+
+        div {
+          border-bottom: 4px solid white;
+          border-radius: 15px;
+          margin: 8px;
         }
-    }  
+      }
+
+
+      // Hiding nav for now
+      #nav-container {
+          display: none;
+      }
+
+      h1 {
+          font-size: 45px;
+          grid-row: 2;
+      }
+  }  
 
     #sticky-nav {
         display: none;

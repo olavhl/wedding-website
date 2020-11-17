@@ -60,7 +60,12 @@ html {
   display: grid;
   grid-template-rows: repeat(6, auto);
 
-  // TODO: Work on this
+  // Hiding hamburger-menu for desktop and large screens
+  #hamburger-container {
+    display: none;
+  }
+
+
   #nav-container {
     grid-column: 2/7;
 

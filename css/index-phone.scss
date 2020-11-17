@@ -17,8 +17,8 @@ $text-dark-hover-color: rgb(68, 68, 68);
 
       // Hamburger-menu
       .hamburger-container {
+        position: fixed;
         display: block;
-        position: absolute;
         width: 50px;
         height: auto;
         top: 15px;
@@ -43,7 +43,7 @@ $text-dark-hover-color: rgb(68, 68, 68);
           z-index: 10;
           opacity: .8;
           transform: translateX(100%);
-          transition: transform .5s ease-in;
+          transition: transform .35s ease-in;
 
           nav {
             height: 100%;
@@ -58,9 +58,9 @@ $text-dark-hover-color: rgb(68, 68, 68);
               font-size: 25px;
               padding:20px 0 20px 0;
               
-              // Ready for animation
-              //position: relative;
-              //right: -100px;
+              a {
+                opacity: 0;
+              }
             }
           }
       }
@@ -212,6 +212,18 @@ $text-dark-hover-color: rgb(68, 68, 68);
         }
         
       }
+    }
+
+    @keyframes navLinksFade {
+      from {
+        opacity: 0;
+        transform: translateX(55px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+      
     }
   
   }

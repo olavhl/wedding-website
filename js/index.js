@@ -167,25 +167,34 @@ function changeColorNavPhone (selectedId) {
 function changeNavColorGreen() {
   stickyNav.style.opacity = "0.9";
   stickyNav.style.background = "rgb(189, 198, 183)";
-  //stickyNav.classList.add("sticky-background-green")
-  //stickyNav.classList.remove("sticky-background-black")
 }
 
 function changeNavColorBlack() {
   stickyNav.style.opacity = "0.4";
   stickyNav.style.background = "rgb(0, 0, 0)";
-  //stickyNav.classList.add("sticky-background-black")
-  //stickyNav.classList.remove("sticky-background-green")
 }
 
 // Function for toggeling between classes to show menu
 const navSlide = () => {
   const burgerMenu = document.querySelector(".hamburger-container");
   const nav = document.querySelector(".nav-container");
+  const navLinks = document.querySelectorAll(".nav-links a");
 
   burgerMenu.addEventListener('click', () => {
+    // Toggle nav
     nav.classList.toggle('nav-active');
+
+    // Animate links
+    navLinks.forEach((link, index) => {
+      if (link.style.animation) { 
+        link.style.animation = '';
+      } else {
+        link.style.animation = `navLinksFade 1s ease forwards ${index / 7.5 + 0.5}s`;
+      }
+    });
   });
+
+
 }
 
 navSlide();

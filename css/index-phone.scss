@@ -8,6 +8,11 @@ $text-dark-hover-color: rgb(68, 68, 68);
 
 @media only screen and (max-width: 600px) {
 
+  body {
+    overflow-x: hidden;
+  }
+
+
   .hero-container {
       // Changing background to taller version
       background: url("../img/hero-phone.jpg") no-repeat center center;
@@ -30,6 +35,7 @@ $text-dark-hover-color: rgb(68, 68, 68);
           border-radius: 15px;
           margin: 8px;
         }
+
       }
 
 

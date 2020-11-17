@@ -1,4 +1,7 @@
 @media only screen and (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
   .hero-container {
     background: url("../img/hero-phone.jpg") no-repeat center center;
     background-size: cover;

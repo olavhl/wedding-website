@@ -189,9 +189,10 @@ const navSlide = () => {
       if (link.style.animation) { 
         link.style.animation = '';
       } else {
-        link.style.animation = `navLinksFade 1s ease forwards ${index / 7.5 + 0.5}s`;
+        link.style.animation = `navLinksFade .5s ease forwards ${index / 8 + 0.2}s`;
       }
     });
+    
   });
 
 

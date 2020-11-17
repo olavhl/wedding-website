@@ -40,7 +40,7 @@ html {
       grid-template-columns: repeat(7, 1fr);
 }
 
-#hero-container {
+.hero-container {
   background: url("../img/hero-desktop.jpg") no-repeat center center;
   background-size: cover;
   overflow: hidden;
@@ -52,17 +52,21 @@ html {
       grid-template-rows: repeat(6, auto);
 }
 
-#hero-container #nav-container {
+.hero-container .hamburger-container {
+  display: none;
+}
+
+.hero-container .nav-container {
   -ms-grid-column: 2;
   -ms-grid-column-span: 5;
   grid-column: 2/7;
 }
 
-#hero-container #nav-container nav {
+.hero-container .nav-container nav {
   height: 100px;
 }
 
-#hero-container #nav-container ul {
+.hero-container .nav-container ul {
   position: absolute;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -72,49 +76,50 @@ html {
   z-index: 10;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (150px)[6];
-      grid-template-columns: repeat(6, 150px);
+  -ms-grid-columns: (auto)[6];
+      grid-template-columns: repeat(6, auto);
   margin-top: 30px;
 }
 
-#hero-container #nav-container ul li {
+.hero-container .nav-container ul li {
   text-align: center;
   font-size: 17px;
+  padding: 20px;
   cursor: pointer;
 }
 
-#hero-container #nav-container ul li a {
+.hero-container .nav-container ul li a {
   text-decoration: none;
   color: inherit;
 }
 
-#hero-container #nav-container ul .nav-not-selected {
+.hero-container .nav-container ul .nav-not-selected {
   color: #beb6b6;
 }
 
-#hero-container #nav-container ul .nav-not-selected:hover {
+.hero-container .nav-container ul .nav-not-selected:hover {
   color: #e4dede;
 }
 
-#hero-container #nav-container ul .nav-selected {
+.hero-container .nav-container ul .nav-selected {
   color: white;
   font-family: SamsungMedium;
 }
 
-#hero-container #nav-container ul .nav-dark-selected {
+.hero-container .nav-container ul .nav-dark-selected {
   color: #000;
   font-family: SamsungMedium;
 }
 
-#hero-container #nav-container ul .nav-dark-not-selected {
+.hero-container .nav-container ul .nav-dark-not-selected {
   color: #646464;
 }
 
-#hero-container #nav-container ul .nav-dark-not-selected:hover {
+.hero-container .nav-container ul .nav-dark-not-selected:hover {
   color: #444444;
 }
 
-#hero-container h1 {
+.hero-container h1 {
   color: #fff;
   text-align: center;
   font-weight: 400;
@@ -128,7 +133,7 @@ html {
   z-index: 2;
 }
 
-#hero-container #cover {
+.hero-container #cover {
   background-color: #000;
   opacity: 0.35;
   position: absolute;
@@ -196,6 +201,7 @@ html {
   -ms-grid-column-span: 3;
   grid-column: 1/4;
   width: 90%;
+  height: 250px;
   margin: auto;
 }
 
@@ -204,15 +210,17 @@ html {
   height: 65px;
   z-index: 9;
   visibility: hidden;
-  background: #bdc6b7;
-  background: -webkit-gradient(linear, left top, right top, color-stop(35%, #bdc6b7), to(#979d86));
-  background: linear-gradient(90deg, #bdc6b7 35%, #979d86 100%);
+  -webkit-transition: background .3s ease-in-out, opacity .3s ease-in-out, -webkit-box-shadow .7s ease-in-out;
+  transition: background .3s ease-in-out, opacity .3s ease-in-out, -webkit-box-shadow .7s ease-in-out;
+  transition: background .3s ease-in-out, opacity .3s ease-in-out, box-shadow .7s ease-in-out;
+  transition: background .3s ease-in-out, opacity .3s ease-in-out, box-shadow .7s ease-in-out, -webkit-box-shadow .7s ease-in-out;
 }
 
 .sticky {
   position: fixed;
-  opacity: .8;
   top: 0;
+  -webkit-box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
 }
 
 #wishlist-container {
@@ -222,8 +230,8 @@ html {
   background-size: cover;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (auto)[3];
-      grid-template-rows: repeat(3, auto);
+  -ms-grid-rows: (auto)[6];
+      grid-template-rows: repeat(6, auto);
 }
 
 #wishlist-container #wishlist-image-container {
@@ -231,8 +239,8 @@ html {
   -ms-grid-column: 3;
   -ms-grid-column-span: 3;
   grid-column: 3/6;
-  -ms-grid-row: 2;
-  grid-row: 2;
+  -ms-grid-row: 4;
+  grid-row: 4;
 }
 
 #wishlist-container #wishlist-image-container a {
@@ -331,5 +339,18 @@ html {
 
 #contact-container {
   background-color: darkolivegreen;
+}
+
+#corona-container {
+  -ms-grid-rows: (auto)[5];
+      grid-template-rows: repeat(5, auto);
+}
+
+#corona-container #corona-info {
+  -ms-grid-row: 3;
+  grid-row: 3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 3;
+  grid-column: 3/6;
 }
 /*# sourceMappingURL=index.css.map */

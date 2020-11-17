@@ -1,0 +1,240 @@
+@media only screen and (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
+  .hero-container {
+    background: url("../img/hero-phone.jpg") no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+  }
+  .hero-container .hamburger-container {
+    position: fixed;
+    display: block;
+    width: 50px;
+    height: auto;
+    top: 15px;
+    right: 15px;
+    z-index: 15;
+  }
+  .hero-container .hamburger-container div {
+    border-bottom: 4px solid white;
+    border-radius: 15px;
+    margin: 8px;
+  }
+  .hero-container .nav-container {
+    position: fixed;
+    cursor: pointer;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: 10;
+    opacity: .8;
+    -webkit-backdrop-filter: blur(2px);
+            backdrop-filter: blur(2px);
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform .35s ease-in;
+    transition: -webkit-transform .35s ease-in;
+    transition: transform .35s ease-in;
+    transition: transform .35s ease-in, -webkit-transform .35s ease-in;
+  }
+  .hero-container .nav-container nav {
+    height: 100%;
+  }
+  .hero-container .nav-container ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 70vh;
+  }
+  .hero-container .nav-container ul li {
+    font-size: 25px;
+    padding: 20px 0 20px 0;
+  }
+  .hero-container .nav-container ul li a {
+    opacity: 0;
+  }
+  .hero-container .nav-container ul .nav-not-selected {
+    color: #beb6b6;
+    font-family: SamsungMedium;
+  }
+  .hero-container .nav-container ul .nav-selected {
+    color: white;
+    font-family: SamsungBold;
+  }
+  .hero-container .nav-active {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .hero-container h1 {
+    font-size: 45px;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+  #sticky-nav {
+    display: none;
+  }
+  #where-container {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 10% 75% 15%;
+        grid-template-rows: 10% 75% 15%;
+    -ms-grid-columns: 10% 80% 10%;
+        grid-template-columns: 10% 80% 10%;
+  }
+  #where-container #where-info-box {
+    width: 300px;
+    height: 70vh;
+    -ms-grid-column: 2;
+    grid-column: 2;
+    row-gap: 30px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 1% 49%;
+        grid-template-columns: 50% 1% 49%;
+  }
+  #where-container #where-info-box p {
+    font-size: 12px;
+  }
+  #where-container #where-info-box iframe {
+    width: 250px;
+    height: 250px;
+    margin: auto;
+  }
+  #wishlist-container {
+    background: url("../img/where-phone.jpg") no-repeat center center;
+    background-size: cover;
+  }
+  #wishlist-container #wishlist-image-container {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 5;
+    grid-column: 2/7;
+    -ms-grid-row: 4;
+    grid-row: 4;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  #wishlist-container #wishlist-image-container a {
+    opacity: 1;
+  }
+  #wishlist-container #wishlist-image-container a img {
+    width: 170px;
+  }
+  #hotel-container {
+    -ms-grid-row: 4;
+    grid-row: 4;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: (auto)[8];
+        grid-template-rows: repeat(8, auto);
+  }
+  #hotel-container #hotels-box {
+    width: 100%;
+    height: 70vh;
+    font-size: 15px;
+    margin: auto;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 5;
+    grid-column: 2/7;
+    -ms-grid-row: 3;
+    grid-row: 3;
+    row-gap: 10px;
+    -ms-grid-rows: auto 1px auto 3px auto 3px auto;
+        grid-template-rows: auto 1px auto 3px auto 3px auto;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  #hotel-container #hotels-box p {
+    font-family: SamsungMedium;
+    font-size: 17px;
+  }
+  #hotel-container #hotels-box .hotel-boxes {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+    font-family: SamsungRegular;
+    margin: 40px 0 40px 0;
+  }
+  #hotel-container #hotels-box #hotel-box1 {
+    -ms-grid-row: 3;
+    grid-row: 3;
+  }
+  #hotel-container #hotels-box #hotel-box1 h2 {
+    font-family: SamsungRegular;
+  }
+  #hotel-container #hotels-box #hotel-box1 p {
+    font-family: SamsungRegular;
+  }
+  #hotel-container #hotels-box #hotel-box2 {
+    -ms-grid-row: 5;
+    grid-row: 5;
+  }
+  #hotel-container #hotels-box #hotel-box2 h2 {
+    font-family: SamsungRegular;
+  }
+  #hotel-container #hotels-box #hotel-box2 p {
+    font-family: SamsungRegular;
+  }
+  #hotel-container #hotels-box #hotel-box3 {
+    -ms-grid-row: 7;
+    grid-row: 7;
+  }
+  #hotel-container #hotels-box #hotel-box3 h2 {
+    font-family: SamsungRegular;
+  }
+  #hotel-container #hotels-box #hotel-box3 p {
+    font-family: SamsungRegular;
+  }
+  #hotel-container #hotels-box .hotel-vertical-line {
+    border-bottom: 2px solid #646464;
+    border-left: 0;
+    grid-column-end: 1/4;
+    height: 3px;
+    width: 70vw;
+  }
+  #hotel-container #hotels-box #hotel-vertical-line1 {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 4;
+    grid-row: 4;
+  }
+  #hotel-container #hotels-box #hotel-vertical-line2 {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 6;
+    grid-row: 6;
+  }
+  @-webkit-keyframes navLinksFade {
+    from {
+      opacity: 0;
+      -webkit-transform: translateX(55px);
+              transform: translateX(55px);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  @keyframes navLinksFade {
+    from {
+      opacity: 0;
+      -webkit-transform: translateX(55px);
+              transform: translateX(55px);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+}
+/*# sourceMappingURL=index-phone.css.map */

@@ -182,7 +182,11 @@ const navSlide = () => {
 
   burgerMenu.addEventListener('click', () => {
     // Toggle nav
-    nav.classList.toggle('nav-active');
+    if (nav.classList.contains === 'nav-active') {
+      nav.classList.remove('nav-active');
+    } else {
+      nav.classList.toggle('nav-active');
+    }
 
     // Animate links
     navLinks.forEach((link, index) => {
@@ -192,10 +196,25 @@ const navSlide = () => {
         link.style.animation = `navLinksFade .5s ease forwards ${index / 8 + 0.2}s`;
       }
     });
-    
+
   });
+}
 
+const removeSlide = () => {
+  const navLinks = document.querySelectorAll(".nav-links a");
+  const nav = document.querySelector(".nav-container")
 
+  // Find a way to close element onclick
+  nav.addEventListener('click', () => {
+    nav.classList.toggle('nav-active');
+
+    navLinks.forEach((link, index) => {
+      if (link.style.animation) { 
+        link.style.animation = '';
+      }
+    });
+  });
 }
 
 navSlide();
+removeSlide();

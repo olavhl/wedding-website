@@ -34,6 +34,11 @@ $text-dark-hover-color: rgb(68, 68, 68);
 * {
   margin: 0;
   padding: 0;
+  font-family: "Samsung Sharp Sans Regular";
+  font-style: normal;
+
+  // For cover
+  overflow: hidden;
 }
 
 // Scrolling smoothly through the site
@@ -71,6 +76,8 @@ html {
 
     nav {
       height: 100px;
+      // For cover
+      display: none;
     }
     
     ul {
@@ -130,6 +137,7 @@ html {
     color: #fff;
     text-align: center;
     font-weight: 400;
+
     font-family: SamsungMedium;
     font-size: 100px;
     grid-column: 2/7;
@@ -329,8 +337,8 @@ html {
 
 #corona-container {
   grid-template-rows: repeat(5, auto);
+  
   #corona-info {
     grid-row: 3;
     grid-column: 3/6;
-  }
 }

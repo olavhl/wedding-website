@@ -206,14 +206,16 @@ const removeSlide = () => {
 
   // Find a way to close element onclick
   nav.addEventListener('click', () => {
+    setTimeout(function(){
     nav.classList.toggle('nav-active');
 
-    navLinks.forEach((link, index) => {
+    navLinks.forEach(link => {
       if (link.style.animation) { 
         link.style.animation = '';
       }
     });
-  });
+  }, 1000);
+});
 }
 
 navSlide();

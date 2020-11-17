@@ -220,7 +220,7 @@ const removeSlide = () => {
         whereIframe.style.pointerEvents = "auto";
       }
     });
-  }, 1000);
+  }, 500);
 });
 }
 

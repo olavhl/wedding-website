@@ -40,7 +40,7 @@ html {
       grid-template-columns: repeat(7, 1fr);
 }
 
-#hero-container {
+.hero-container {
   background: url("../img/hero-desktop.jpg") no-repeat center center;
   background-size: cover;
   overflow: hidden;
@@ -52,21 +52,21 @@ html {
       grid-template-rows: repeat(6, auto);
 }
 
-#hero-container #hamburger-container {
+.hero-container .hamburger-container {
   display: none;
 }
 
-#hero-container #nav-container {
+.hero-container .nav-container {
   -ms-grid-column: 2;
   -ms-grid-column-span: 5;
   grid-column: 2/7;
 }
 
-#hero-container #nav-container nav {
+.hero-container .nav-container nav {
   height: 100px;
 }
 
-#hero-container #nav-container ul {
+.hero-container .nav-container ul {
   position: absolute;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -81,45 +81,45 @@ html {
   margin-top: 30px;
 }
 
-#hero-container #nav-container ul li {
+.hero-container .nav-container ul li {
   text-align: center;
   font-size: 17px;
   padding: 20px;
   cursor: pointer;
 }
 
-#hero-container #nav-container ul li a {
+.hero-container .nav-container ul li a {
   text-decoration: none;
   color: inherit;
 }
 
-#hero-container #nav-container ul .nav-not-selected {
+.hero-container .nav-container ul .nav-not-selected {
   color: #beb6b6;
 }
 
-#hero-container #nav-container ul .nav-not-selected:hover {
+.hero-container .nav-container ul .nav-not-selected:hover {
   color: #e4dede;
 }
 
-#hero-container #nav-container ul .nav-selected {
+.hero-container .nav-container ul .nav-selected {
   color: white;
   font-family: SamsungMedium;
 }
 
-#hero-container #nav-container ul .nav-dark-selected {
+.hero-container .nav-container ul .nav-dark-selected {
   color: #000;
   font-family: SamsungMedium;
 }
 
-#hero-container #nav-container ul .nav-dark-not-selected {
+.hero-container .nav-container ul .nav-dark-not-selected {
   color: #646464;
 }
 
-#hero-container #nav-container ul .nav-dark-not-selected:hover {
+.hero-container .nav-container ul .nav-dark-not-selected:hover {
   color: #444444;
 }
 
-#hero-container h1 {
+.hero-container h1 {
   color: #fff;
   text-align: center;
   font-weight: 400;
@@ -133,7 +133,7 @@ html {
   z-index: 2;
 }
 
-#hero-container #cover {
+.hero-container #cover {
   background-color: #000;
   opacity: 0.35;
   position: absolute;

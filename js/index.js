@@ -177,3 +177,15 @@ function changeNavColorBlack() {
   //stickyNav.classList.add("sticky-background-black")
   //stickyNav.classList.remove("sticky-background-green")
 }
+
+// Function for toggeling between classes to show menu
+const navSlide = () => {
+  const burgerMenu = document.querySelector(".hamburger-container");
+  const nav = document.querySelector(".nav-container");
+
+  burgerMenu.addEventListener('click', () => {
+    nav.classList.toggle('nav-active');
+  });
+}
+
+navSlide();

@@ -52,7 +52,7 @@ html {
 }
 
 // Properties for Home
-#hero-container {
+.hero-container {
   background: url("../img/hero-desktop.jpg") no-repeat center center;
   background-size: cover;
   overflow: hidden;
@@ -61,12 +61,12 @@ html {
   grid-template-rows: repeat(6, auto);
 
   // Hiding hamburger-menu for desktop and large screens
-  #hamburger-container {
+  .hamburger-container {
     display: none;
   }
 
 
-  #nav-container {
+  .nav-container {
     grid-column: 2/7;
 
     nav {

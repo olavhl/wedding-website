@@ -50,64 +50,79 @@ window.addEventListener("scroll", () => {
 
   // Do this if on a desktop
   if (offsetWidth > 450){
-  if (topYoffsett >= fifthInnerHight - 40){
-    changeColorNav(
-      navCorona,
-      "nav-dark-selected",
-      "nav-dark-not-selected",
-      "nav-selected",
-      "nav-not-selected"
-    );
-    changeNavColorGreen();
-  } else if (topYoffsett >= fourthInnerHight - 40) {
-    changeColorNav(
-      navContact,
-      "nav-selected",
-      "nav-not-selected",
-      "nav-dark-selected",
-      "nav-dark-not-selected"
-    );
-    changeNavColorBlack();
-  } else if (topYoffsett >= thirdInnerHight - 40) {
-    changeColorNav(
-      navHotel,
-      "nav-dark-selected",
-      "nav-dark-not-selected",
-      "nav-selected",
-      "nav-not-selected"
-    );
-    changeNavColorGreen();
-  } else if (topYoffsett >= secondInnerHight - 40) {
-    changeColorNav(
-      navWishlist,
-      "nav-selected",
-      "nav-not-selected",
-      "nav-dark-selected",
-      "nav-dark-not-selected"
-    );
-    changeNavColorBlack();
-  } else if (topYoffsett >= innerHeightOfWindow - 40) {
-    changeColorNav(
-      navWhere,
-      "nav-dark-selected",
-      "nav-dark-not-selected",
-      "nav-selected",
-      "nav-not-selected"
-    );
-    changeNavColorGreen();
-  } else if (topYoffsett < innerHeightOfWindow - 40) {
-    changeColorNav(
-      navHome,
-      "nav-selected",
-      "nav-not-selected",
-      "nav-dark-selected",
-      "nav-dark-not-selected"
-    );
+    if (topYoffsett >= fifthInnerHight - 40){
+      changeColorNav(
+        navCorona,
+        "nav-dark-selected",
+        "nav-dark-not-selected",
+        "nav-selected",
+        "nav-not-selected"
+      );
+      changeNavColorGreen();
+    } else if (topYoffsett >= fourthInnerHight - 40) {
+      changeColorNav(
+        navContact,
+        "nav-selected",
+        "nav-not-selected",
+        "nav-dark-selected",
+        "nav-dark-not-selected"
+      );
+      changeNavColorBlack();
+    } else if (topYoffsett >= thirdInnerHight - 40) {
+      changeColorNav(
+        navHotel,
+        "nav-dark-selected",
+        "nav-dark-not-selected",
+        "nav-selected",
+        "nav-not-selected"
+      );
+      changeNavColorGreen();
+    } else if (topYoffsett >= secondInnerHight - 40) {
+      changeColorNav(
+        navWishlist,
+        "nav-selected",
+        "nav-not-selected",
+        "nav-dark-selected",
+        "nav-dark-not-selected"
+      );
+      changeNavColorBlack();
+    } else if (topYoffsett >= innerHeightOfWindow - 40) {
+      changeColorNav(
+        navWhere,
+        "nav-dark-selected",
+        "nav-dark-not-selected",
+        "nav-selected",
+        "nav-not-selected"
+      );
+      changeNavColorGreen();
+    } else if (topYoffsett < innerHeightOfWindow - 40) {
+      changeColorNav(
+        navHome,
+        "nav-selected",
+        "nav-not-selected",
+        "nav-dark-selected",
+        "nav-dark-not-selected"
+      );
+    }
+  } else {
+    if (topYoffsett >= fifthInnerHight - 40){
+      changeColorNavPhone(navCorona);
+    } else if (topYoffsett >= fourthInnerHight - 40) {
+      changeColorNavPhone(navContact);
+    } else if (topYoffsett >= thirdInnerHight - 40) {
+      changeColorNavPhone(navHotel);
+    } else if (topYoffsett >= secondInnerHight - 40) {
+      changeColorNavPhone(navWishlist);
+    } else if (topYoffsett >= innerHeightOfWindow - 40) {
+      changeColorNavPhone(navWhere);
+    } else {
+      changeColorNavPhone(navHome);
+    }
   }
-}
 });
 
 // Function for changing color and size for selected tab in nav
+// for desktop and phone
 function changeColorNav(
   selectedId,
   selectedClass,
@@ -115,6 +130,7 @@ function changeColorNav(
   removedClass1,
   removedClass2
 ) {
+  // Fetching all list items
   var liElements = document
     .getElementById("nav-container")
     .querySelectorAll("li");
@@ -124,7 +140,7 @@ function changeColorNav(
       liElements[i].classList.remove(removedClass2);
       liElements[i].classList.remove(removedClass1);
       liElements[i].classList.add(notSelectedClass);
-      liElements[i].style.border = "0";
+
     } else {
       selectedId.classList.add(selectedClass);
       selectedId.classList.remove(removedClass2);
@@ -132,6 +148,21 @@ function changeColorNav(
   }
 }
 
+// Function for changing color of nav for PHONE
+function changeColorNavPhone (selectedId) {
+  var liElements = document
+    .getElementById("nav-container")
+    .querySelectorAll("li");
+
+    for (var i = 0; i < liElements.length; i++) {
+      if (liElements[i] !== selectedId) {
+        liElements[i].classList.add("nav-not-selected");
+        liElements[i].classList.remove("nav-selected");
+      } else {
+        selectedId.classList.add("nav-selected");
+      }
+    }
+}
 
 function changeNavColorGreen() {
   stickyNav.style.opacity = "0.9";

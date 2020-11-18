@@ -166,7 +166,7 @@ function changeColorNavPhone (selectedId) {
 
 function changeNavColorGreen() {
   stickyNav.style.opacity = "0.9";
-  stickyNav.style.background = "rgb(189, 198, 183)";
+  stickyNav.style.background = "linear-gradient(90deg, rgba(189, 198, 183, 1) 35%, rgba(151, 157, 134, 1) 100%)"
 }
 
 function changeNavColorBlack() {

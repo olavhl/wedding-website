@@ -211,7 +211,6 @@ const removeSlide = () => {
 
   // Find a way to close element onclick
   nav.addEventListener('click', () => {
-    setTimeout(function(){
     nav.classList.toggle('nav-active');
 
     navLinks.forEach(link => {
@@ -220,7 +219,6 @@ const removeSlide = () => {
         whereIframe.style.pointerEvents = "auto";
       }
     });
-  }, 500);
 });
 }
 

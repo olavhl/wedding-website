@@ -177,6 +177,9 @@
   #hotel-container #hotels-box #hotel-box1 p {
     font-family: SamsungRegular;
   }
+  #hotel-container #hotels-box #hotel-box1 a {
+    margin-bottom: 0;
+  }
   #hotel-container #hotels-box #hotel-box1 img {
     width: 90px;
   }
@@ -193,28 +196,30 @@
   #hotel-container #hotels-box #hotel-box2 p {
     font-family: SamsungRegular;
   }
-  #hotel-container #hotels-box #hotel-box4 {
+  #hotel-container #hotels-box #hotel-box3 {
     -ms-grid-row: 5;
     grid-row: 5;
+    -ms-grid-column: 1;
+    grid-column: 1;
     margin-right: 15%;
   }
-  #hotel-container #hotels-box #hotel-box4 h2 {
+  #hotel-container #hotels-box #hotel-box3 h2 {
     font-family: SamsungRegular;
   }
-  #hotel-container #hotels-box #hotel-box4 p {
+  #hotel-container #hotels-box #hotel-box3 p {
     font-family: SamsungRegular;
   }
-  #hotel-container #hotels-box #hotel-box3 {
+  #hotel-container #hotels-box #hotel-box4 {
     -ms-grid-row: 5;
     grid-row: 5;
     -ms-grid-column: 3;
     grid-column: 3;
     margin-left: 15%;
   }
-  #hotel-container #hotels-box #hotel-box3 h2 {
+  #hotel-container #hotels-box #hotel-box4 h2 {
     font-family: SamsungRegular;
   }
-  #hotel-container #hotels-box #hotel-box3 p {
+  #hotel-container #hotels-box #hotel-box4 p {
     font-family: SamsungRegular;
   }
   #hotel-container #hotels-box .hotel-vertical-line {

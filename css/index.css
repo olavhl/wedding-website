@@ -331,6 +331,20 @@ html {
           filter: brightness(1.5);
 }
 
+#hotel-container #hotels-box #hotel-box1 img {
+  width: 95px;
+}
+
+#hotel-container #hotels-box #hotel-box3 {
+  -ms-grid-column: 7;
+  grid-column: 7;
+}
+
+#hotel-container #hotels-box #hotel-box4 {
+  -ms-grid-column: 5;
+  grid-column: 5;
+}
+
 #hotel-container #hotels-box .hotel-vertical-line {
   border-left: 2px solid #646464;
   height: 225px;

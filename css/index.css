@@ -164,8 +164,8 @@ html {
   -ms-grid-column: 2;
   -ms-grid-column-span: 5;
   grid-column: 2/7;
-  -ms-grid-row: 2;
-  grid-row: 2;
+  -ms-grid-row: 3;
+  grid-row: 3;
   row-gap: 30px;
   display: -ms-grid;
   display: grid;
@@ -283,8 +283,8 @@ html {
   grid-row: 4;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (auto)[8];
-      grid-template-rows: repeat(8, auto);
+  -ms-grid-rows: (auto)[9];
+      grid-template-rows: repeat(9, auto);
 }
 
 #hotel-container #hotels-box {
@@ -294,13 +294,13 @@ html {
   -ms-grid-column: 2;
   -ms-grid-column-span: 5;
   grid-column: 2/7;
-  -ms-grid-row: 3;
-  grid-row: 3;
+  -ms-grid-row: 4;
+  grid-row: 4;
   row-gap: 30px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto 3px auto 3px auto;
-      grid-template-columns: auto 3px auto 3px auto;
+  -ms-grid-columns: auto 3px auto 3px auto 3px auto;
+      grid-template-columns: auto 3px auto 3px auto 3px auto;
   text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -309,14 +309,26 @@ html {
 
 #hotel-container #hotels-box p {
   -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-column: 1/4;
+  -ms-grid-column-span: 5;
+  grid-column: 1/6;
 }
 
 #hotel-container #hotels-box .hotel-boxes {
   -ms-grid-row: 3;
   grid-row: 3;
   margin: 0 20px 0 20px;
+}
+
+#hotel-container #hotels-box .hotel-boxes img {
+  width: 110px;
+  -webkit-transition: all .1s ease-in;
+  transition: all .1s ease-in;
+}
+
+#hotel-container #hotels-box .hotel-boxes img:hover {
+  width: 115px;
+  -webkit-filter: brightness(1.5);
+          filter: brightness(1.5);
 }
 
 #hotel-container #hotels-box .hotel-vertical-line {

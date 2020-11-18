@@ -321,6 +321,14 @@ html {
 
 #hotel-container #hotels-box .hotel-boxes img {
   width: 110px;
+  -webkit-transition: all .1s ease-in;
+  transition: all .1s ease-in;
+}
+
+#hotel-container #hotels-box .hotel-boxes img:hover {
+  width: 115px;
+  -webkit-filter: brightness(1.5);
+          filter: brightness(1.5);
 }
 
 #hotel-container #hotels-box .hotel-vertical-line {

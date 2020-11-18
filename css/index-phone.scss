@@ -207,7 +207,7 @@ $text-dark-hover-color: rgb(68, 68, 68);
           }
         }
 
-        #hotel-box3 {
+        #hotel-box4 {
           grid-row: 5;
           margin-right: 15%;
 
@@ -220,7 +220,7 @@ $text-dark-hover-color: rgb(68, 68, 68);
           }
         }
 
-        #hotel-box4 {
+        #hotel-box3 {
           grid-row: 5;
           grid-column: 3;
           margin-left: 15%;
@@ -240,7 +240,7 @@ $text-dark-hover-color: rgb(68, 68, 68);
 
         #hotel-vertical-line1 {
           display: block;
-          border-top: 2px solid $text-dark-second-color;
+          border-top: 1px solid $text-dark-second-color;
           grid-row: 4;
           grid-column: 1/4;
           height: 0;
@@ -249,7 +249,7 @@ $text-dark-hover-color: rgb(68, 68, 68);
 
         #hotel-vertical-line2 {
           display: block;
-          border-left: 2px solid $text-dark-second-color;
+          border-left: 1px solid $text-dark-second-color;
           grid-row: 3/6;
           grid-column: 2;
           height: 80%;

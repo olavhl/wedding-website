@@ -187,6 +187,10 @@ $text-dark-hover-color: rgb(68, 68, 68);
             font-family: SamsungRegular;
           }
 
+          a {
+            margin-bottom: 0;
+          }
+
           img {
             width: 90px;
           }
@@ -207,8 +211,9 @@ $text-dark-hover-color: rgb(68, 68, 68);
           }
         }
 
-        #hotel-box4 {
+        #hotel-box3 {
           grid-row: 5;
+          grid-column: 1;
           margin-right: 15%;
 
           h2 {
@@ -220,7 +225,7 @@ $text-dark-hover-color: rgb(68, 68, 68);
           }
         }
 
-        #hotel-box3 {
+        #hotel-box4 {
           grid-row: 5;
           grid-column: 3;
           margin-left: 15%;

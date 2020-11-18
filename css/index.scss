@@ -314,8 +314,20 @@ html {
           filter: brightness(1.5);
         }
       }
+    }
 
+    #hotel-box1 {
+      img {
+        width: 95px;
+      }
+    }
 
+    #hotel-box3 {
+      grid-column: 7;
+    }
+
+    #hotel-box4 {
+      grid-column: 5;
     }
 
 

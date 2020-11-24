@@ -190,6 +190,11 @@ html {
     .where-text-parts {
       margin-top: 40px;
       text-align: center;
+
+      // Hiding get-directions for desktop
+      a {
+        display: none;
+      }
     }
 
     #where-vertical-line {
@@ -299,6 +304,10 @@ html {
 
     p {
       grid-column: 1/6;
+
+      span {
+        display: none;
+      }
     }
 
     .hotel-boxes {
@@ -351,18 +360,59 @@ html {
 }
 
 #contact-container {
-  background-color: darkolivegreen;
+  background: url("../img/contact.jpg") no-repeat center center;
+  background-size: cover;
+  z-index: 1;
+  grid-template-rows: repeat(8, 1fr);
+
+  #cover-contact {
+    grid-column: 1/8;
+    grid-row: 1/-1;
+    z-index: 2;
+    background-color: black;
+    opacity: .5;
+  }
+
+  #contact-info {
+    color: white;
+    grid-column: 3/6;
+    grid-row: 2/6;
+    font-family: SamsungMedium;
+    font-size: 16px;
+    z-index: 3;
+
+    #contact-wedders {
+      text-align: center;
+      padding: 50px;
+
+      h3 {
+        padding-bottom: 20px;
+      }
+    }
+
+    #contact-toastmasters {
+      text-align: center;
+      padding: 50px;
+
+      h4 {
+        padding-bottom: 20px;
+      }
+    }
+    
+    .center {
+      text-align: center;
+    }
+  }
 }
 
 #corona-container {
   grid-template-rows: repeat(5, auto);
   
   #corona-info {
+    font-family: SamsungMedium;
     grid-row: 3;
     grid-column: 3/6;
+    text-align: center;
+    font-size: 18px;
 }
 }
-
-//@media only screen and (max-width: 600px) {
-
-//}

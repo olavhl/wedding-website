@@ -100,16 +100,47 @@
     row-gap: 30px;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 50% 1% 49%;
-        grid-template-columns: 50% 1% 49%;
+    -ms-grid-rows: 50% 1% 49%;
+        grid-template-rows: 50% 1% 49%;
+  }
+  #where-container #where-info-box .where-text-parts a {
+    display: block;
+    padding-top: 10px;
+    font-size: 13px;
+    color: #4f71bb;
+  }
+  #where-container #where-info-box #church {
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+    margin: auto;
+  }
+  #where-container #where-info-box #where-vertical-line {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    height: 1;
+    width: 70%;
+    border-left: 0;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+    border-top: 1.5px solid #646464;
+    margin: auto;
+  }
+  #where-container #where-info-box #farm {
+    -ms-grid-row: 3;
+    grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
   }
   #where-container #where-info-box p {
     font-size: 12px;
   }
   #where-container #where-info-box iframe {
-    width: 250px;
-    height: 250px;
-    margin: auto;
+    display: none;
   }
   #wishlist-container {
     background: url("../img/where-phone.jpg") no-repeat center center;
@@ -125,10 +156,14 @@
         align-content: center;
   }
   #wishlist-container #wishlist-image-container a {
-    opacity: 1;
+    opacity: .9;
   }
   #wishlist-container #wishlist-image-container a img {
     width: 170px;
+    opacity: .9;
+  }
+  #wishlist-container #wishlist-image-container a h3 {
+    opacity: .9;
   }
   #hotel-container {
     -ms-grid-row: 4;
@@ -157,6 +192,12 @@
   #hotel-container #hotels-box p {
     font-family: SamsungMedium;
     font-size: 17px;
+  }
+  #hotel-container #hotels-box p span {
+    padding-top: 5px;
+    display: block;
+    font-size: 13px;
+    font-family: SamsungRegular;
   }
   #hotel-container #hotels-box .hotel-boxes {
     -ms-grid-column: 1;
@@ -246,6 +287,31 @@
     grid-column: 2;
     height: 80%;
     width: 0;
+  }
+  #contact-container #contact-info {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 5;
+    grid-column: 2/7;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 4;
+    grid-row: 2/6;
+    font-size: 14px;
+  }
+  #contact-container #contact-info #contact-wedders {
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  #contact-container #contact-info #contact-toastmasters {
+    padding: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  #corona-container #corona-info {
+    font-family: SamsungRegular;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 5;
+    grid-column: 2/7;
+    font-size: 16px;
   }
   @-webkit-keyframes navLinksFade {
     from {

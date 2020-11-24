@@ -193,6 +193,12 @@
     font-family: SamsungMedium;
     font-size: 17px;
   }
+  #hotel-container #hotels-box p span {
+    padding-top: 5px;
+    display: block;
+    font-size: 13px;
+    font-family: SamsungRegular;
+  }
   #hotel-container #hotels-box .hotel-boxes {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;

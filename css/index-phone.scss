@@ -166,7 +166,7 @@ $text-dark-hover-color: rgb(68, 68, 68);
 
             a {
               opacity: .9;
-              
+
                 img {
                     width: 170px;
                     opacity: .9;
@@ -200,6 +200,13 @@ $text-dark-hover-color: rgb(68, 68, 68);
         p {
           font-family: SamsungMedium;
           font-size: 17px;
+          
+          span {
+            padding-top: 5px;
+            display: block;
+            font-size: 13px;
+            font-family: SamsungRegular;
+          }
         }
 
         .hotel-boxes {

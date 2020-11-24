@@ -106,8 +106,14 @@
   #where-container #where-info-box .where-text-parts a {
     display: block;
     padding-top: 10px;
-    font-size: 13px;
+    font-size: 14px;
     color: #4f71bb;
+  }
+  #where-container #where-info-box .where-text-parts h2 {
+    font-size: 17px;
+  }
+  #where-container #where-info-box .where-text-parts p {
+    font-size: 15px;
   }
   #where-container #where-info-box #church {
     -ms-grid-row: 1;

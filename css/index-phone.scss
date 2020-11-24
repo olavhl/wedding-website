@@ -285,6 +285,15 @@ $text-dark-hover-color: rgb(68, 68, 68);
       }
     }
 
+    #corona-container {  
+      #corona-info {
+        font-family: SamsungRegular;
+        grid-column: 2/7;
+        font-size: 16px;
+      }
+
+    }
+
     @keyframes navLinksFade {
       from {
         opacity: 0;

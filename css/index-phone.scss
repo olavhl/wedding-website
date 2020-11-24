@@ -165,12 +165,16 @@ $text-dark-hover-color: rgb(68, 68, 68);
             align-content: center;
 
             a {
-              opacity: 1;
-
+              opacity: .9;
+              
                 img {
                     width: 170px;
+                    opacity: .9;
                 }
                 
+                h3 {
+                  opacity: .9;
+                }
             }
         }
     }

@@ -365,6 +365,37 @@ html {
 #contact-container {
   background: url("../img/contact.jpg") no-repeat center center;
   background-size: cover;
+  z-index: 1;
+  -ms-grid-rows: (1fr)[7];
+      grid-template-rows: repeat(7, 1fr);
+}
+
+#contact-container #cover-contact {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 7;
+  grid-column: 1/8;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 6;
+  grid-row: 1/7;
+  z-index: 2;
+  background-color: white;
+  opacity: .3;
+}
+
+#contact-container #contact-info {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 5;
+  grid-column: 2/7;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 3;
+  grid-row: 3/6;
+  font-family: SamsungMedium;
+  font-size: 20px;
+  z-index: 3;
+}
+
+#contact-container #contact-info .center {
+  text-align: center;
 }
 
 #corona-container {

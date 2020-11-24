@@ -363,7 +363,8 @@ html {
 }
 
 #contact-container {
-  background-color: darkolivegreen;
+  background: url("../img/contact.jpg") no-repeat center center;
+  background-size: cover;
 }
 
 #corona-container {

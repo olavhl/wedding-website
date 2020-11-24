@@ -100,16 +100,47 @@
     row-gap: 30px;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 50% 1% 49%;
-        grid-template-columns: 50% 1% 49%;
+    -ms-grid-rows: 50% 1% 49%;
+        grid-template-rows: 50% 1% 49%;
+  }
+  #where-container #where-info-box .where-text-parts a {
+    display: block;
+    padding-top: 10px;
+    font-size: 13px;
+    color: #4f71bb;
+  }
+  #where-container #where-info-box #church {
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+    margin: auto;
+  }
+  #where-container #where-info-box #where-vertical-line {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    height: 1;
+    width: 70%;
+    border-left: 0;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+    border-top: 1.5px solid #646464;
+    margin: auto;
+  }
+  #where-container #where-info-box #farm {
+    -ms-grid-row: 3;
+    grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
   }
   #where-container #where-info-box p {
     font-size: 12px;
   }
   #where-container #where-info-box iframe {
-    width: 250px;
-    height: 250px;
-    margin: auto;
+    display: none;
   }
   #wishlist-container {
     background: url("../img/where-phone.jpg") no-repeat center center;

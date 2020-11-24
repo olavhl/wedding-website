@@ -111,16 +111,45 @@ $text-dark-hover-color: rgb(68, 68, 68);
       grid-row: 2;
       row-gap: 30px;
       display: grid;
-      grid-template-columns: 50% 1% 49%;
+      grid-template-rows: 50% 1% 49%;
+
+      .where-text-parts {
+        a {
+          display: block;
+          padding-top: 10px;
+          font-size: 13px;
+          color:  rgb(79, 113, 187);
+        }
+      }
+
+      #church {
+        grid-row: 1;
+        grid-column: 1/4;
+        margin: auto;
+      }
+
+      #where-vertical-line {
+        grid-row: 2;
+        height: 1;
+        width: 70%;
+        border-left: 0;
+        grid-column: 1/4;
+        border-top: 1.5px solid $text-dark-second-color;
+        margin: auto;
+      }
+
+      #farm {
+        grid-row: 3;
+        grid-column: 1/4;
+      }
 
         p {
             font-size: 12px;  
         }
         
+        // Hiding map
         iframe {
-            width:250px;
-            height: 250px;
-            margin: auto;
+            display: none;
         }
 
       }

@@ -190,6 +190,11 @@ html {
     .where-text-parts {
       margin-top: 40px;
       text-align: center;
+
+      // Hiding get-directions for desktop
+      a {
+        display: none;
+      }
     }
 
     #where-vertical-line {

@@ -226,8 +226,8 @@ html {
 .sticky {
   position: fixed;
   top: 0;
-  backdrop-filter: blur(2px);
-  //box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
+  // Not working??
+  backdrop-filter: blur(10px);
 }
 
 // Properties for wishlist

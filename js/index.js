@@ -170,7 +170,7 @@ function changeNavColorGreen() {
 }
 
 function changeNavColorBlack() {
-  stickyNav.style.opacity = "0.4";
+  stickyNav.style.opacity = "0.6";
   stickyNav.style.background = "rgb(0, 0, 0)";
 }
 

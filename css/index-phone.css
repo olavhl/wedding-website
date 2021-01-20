@@ -103,12 +103,6 @@
     -ms-grid-rows: 50% 1% 49%;
         grid-template-rows: 50% 1% 49%;
   }
-  #where-container #where-info-box .where-text-parts a {
-    display: block;
-    padding-top: 10px;
-    font-size: 14px;
-    color: #4f71bb;
-  }
   #where-container #where-info-box .where-text-parts h2 {
     font-size: 17px;
   }
@@ -144,9 +138,6 @@
   }
   #where-container #where-info-box p {
     font-size: 12px;
-  }
-  #where-container #where-info-box iframe {
-    display: none;
   }
   #wishlist-container {
     background: url("../img/where-phone.jpg") no-repeat center center;

@@ -179,17 +179,14 @@ const navSlide = () => {
   const burgerMenu = document.querySelector(".hamburger-container");
   const nav = document.querySelector(".nav-container");
   const navLinks = document.querySelectorAll(".nav-links a");
-  const whereIframe = document.getElementById("where-iframe");
 
   burgerMenu.addEventListener('click', () => {
 
     // Toggle nav
     if (nav.classList.contains === 'nav-active') {
       nav.classList.remove('nav-active');
-      whereIframe.style.pointerEvents = "auto";
     } else {
       nav.classList.toggle('nav-active');
-      whereIframe.style.pointerEvents = "none";
     }
 
     // Animate links
@@ -207,7 +204,6 @@ const navSlide = () => {
 const removeSlide = () => {
   const navLinks = document.querySelectorAll(".nav-links a");
   const nav = document.querySelector(".nav-container")
-  const whereIframe = document.getElementById("where-iframe");
 
   // Find a way to close element onclick
   nav.addEventListener('click', () => {
@@ -216,7 +212,6 @@ const removeSlide = () => {
     navLinks.forEach(link => {
       if (link.style.animation) { 
         link.style.animation = '';
-        whereIframe.style.pointerEvents = "auto";
       }
     });
 });

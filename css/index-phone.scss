@@ -114,12 +114,6 @@ $text-dark-hover-color: rgb(68, 68, 68);
       grid-template-rows: 50% 1% 49%;
 
       .where-text-parts {
-        a {
-          display: block;
-          padding-top: 10px;
-          font-size: 14px;
-          color:  rgb(79, 113, 187);
-        }
 
         h2 {
           font-size: 17px;
@@ -153,11 +147,6 @@ $text-dark-hover-color: rgb(68, 68, 68);
 
         p {
             font-size: 12px;  
-        }
-        
-        // Hiding map
-        iframe {
-            display: none;
         }
 
       }

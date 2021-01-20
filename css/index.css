@@ -165,7 +165,8 @@ html {
   -ms-grid-column-span: 5;
   grid-column: 2/7;
   -ms-grid-row: 3;
-  grid-row: 3;
+  -ms-grid-row-span: 3;
+  grid-row: 3/6;
   row-gap: 30px;
   display: -ms-grid;
   display: grid;
@@ -189,7 +190,10 @@ html {
 }
 
 #where-container #where-info-box .where-text-parts a {
-  display: none;
+  display: block;
+  padding-top: 10px;
+  font-size: 14px;
+  color: #4f71bb;
 }
 
 #where-container #where-info-box #where-vertical-line {
@@ -199,15 +203,6 @@ html {
   grid-column: 2;
   -ms-grid-row: 1;
   grid-row: 1;
-}
-
-#where-container #where-info-box iframe {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-column: 1/4;
-  width: 90%;
-  height: 250px;
-  margin: auto;
 }
 
 #sticky-nav {

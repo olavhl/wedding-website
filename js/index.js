@@ -36,7 +36,7 @@ window.addEventListener("scroll", () => {
   var offsetWidth = window.innerWidth;
 
   if (topYoffsett > sticky - 40) {
-    if (offsetWidth > 450){
+    if (offsetWidth > 450) {
       stickyNav.classList.add("sticky");
       stickyNav.style.visibility = "visible";
       stickyNav.style.position = "fixed";
@@ -47,10 +47,9 @@ window.addEventListener("scroll", () => {
     stickyNav.style.position = "absolute";
   }
 
-
   // Do this if on a desktop
-  if (offsetWidth > 450){
-    if (topYoffsett >= fifthInnerHight - 40){
+  if (offsetWidth > 450) {
+    if (topYoffsett >= fifthInnerHight - 40) {
       changeColorNav(
         navCorona,
         "nav-dark-selected",
@@ -105,7 +104,7 @@ window.addEventListener("scroll", () => {
       );
     }
   } else {
-    if (topYoffsett >= fifthInnerHight - 40){
+    if (topYoffsett >= fifthInnerHight - 40) {
       changeColorNavPhone(navCorona);
     } else if (topYoffsett >= fourthInnerHight - 40) {
       changeColorNavPhone(navContact);
@@ -140,7 +139,6 @@ function changeColorNav(
       liElements[i].classList.remove(removedClass2);
       liElements[i].classList.remove(removedClass1);
       liElements[i].classList.add(notSelectedClass);
-
     } else {
       selectedId.classList.add(selectedClass);
       selectedId.classList.remove(removedClass2);
@@ -149,24 +147,25 @@ function changeColorNav(
 }
 
 // Function for changing color of nav for PHONE
-function changeColorNavPhone (selectedId) {
+function changeColorNavPhone(selectedId) {
   var liElements = document
     .getElementById("nav-container")
     .querySelectorAll("li");
 
-    for (var i = 0; i < liElements.length; i++) {
-      if (liElements[i] !== selectedId) {
-        liElements[i].classList.add("nav-not-selected");
-        liElements[i].classList.remove("nav-selected");
-      } else {
-        selectedId.classList.add("nav-selected");
-      }
+  for (var i = 0; i < liElements.length; i++) {
+    if (liElements[i] !== selectedId) {
+      liElements[i].classList.add("nav-not-selected");
+      liElements[i].classList.remove("nav-selected");
+    } else {
+      selectedId.classList.add("nav-selected");
     }
+  }
 }
 
 function changeNavColorGreen() {
   stickyNav.style.opacity = "0.9";
-  stickyNav.style.background = "linear-gradient(90deg, rgba(189, 198, 183, 1) 35%, rgba(151, 157, 134, 1) 100%)"
+  stickyNav.style.background =
+    "linear-gradient(90deg, rgba(189, 198, 183, 1) 35%, rgba(151, 157, 134, 1) 100%)";
 }
 
 function changeNavColorBlack() {
@@ -180,42 +179,42 @@ const navSlide = () => {
   const nav = document.querySelector(".nav-container");
   const navLinks = document.querySelectorAll(".nav-links a");
 
-  burgerMenu.addEventListener('click', () => {
-
+  burgerMenu.addEventListener("click", () => {
     // Toggle nav
-    if (nav.classList.contains === 'nav-active') {
-      nav.classList.remove('nav-active');
+    if (nav.classList.contains === "nav-active") {
+      nav.classList.remove("nav-active");
     } else {
-      nav.classList.toggle('nav-active');
+      nav.classList.toggle("nav-active");
     }
 
     // Animate links
     navLinks.forEach((link, index) => {
-      if (link.style.animation) { 
-        link.style.animation = '';
+      if (link.style.animation) {
+        link.style.animation = "";
       } else {
-        link.style.animation = `navLinksFade .5s ease forwards ${index / 8 + 0.2}s`;
+        link.style.animation = `navLinksFade .5s ease forwards ${
+          index / 8 + 0.2
+        }s`;
       }
     });
-
   });
-}
+};
 
 const removeSlide = () => {
   const navLinks = document.querySelectorAll(".nav-links a");
-  const nav = document.querySelector(".nav-container")
+  const nav = document.querySelector(".nav-container");
 
   // Find a way to close element onclick
-  nav.addEventListener('click', () => {
-    nav.classList.toggle('nav-active');
+  nav.addEventListener("click", () => {
+    nav.classList.toggle("nav-active");
 
-    navLinks.forEach(link => {
-      if (link.style.animation) { 
-        link.style.animation = '';
+    navLinks.forEach((link) => {
+      if (link.style.animation) {
+        link.style.animation = "";
       }
     });
-});
-}
+  });
+};
 
 navSlide();
 removeSlide();

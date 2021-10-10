@@ -11,25 +11,28 @@ $text-dark-hover-color: rgb(68, 68, 68);
   font-family: SamsungRegular;
   font-style: normal;
   font-weight: normal;
-  src: local('Samsung Sharp Sans Regular'), url('../font/samsung-sharp-sans-cufonfonts-webfont/samsungsharpsans.woff') format('woff');
-  }
-  
-  
-  @font-face {
+  src: local("Samsung Sharp Sans Regular"),
+    url("../font/samsung-sharp-sans-cufonfonts-webfont/samsungsharpsans.woff")
+      format("woff");
+}
+
+@font-face {
   font-family: SamsungMedium;
   font-style: normal;
   font-weight: normal;
-  src: local('Samsung Sharp Sans Medium'), url('../font/samsung-sharp-sans-cufonfonts-webfont/samsungsharpsans-medium.woff') format('woff');
-  }
-  
-  
-  @font-face {
+  src: local("Samsung Sharp Sans Medium"),
+    url("../font/samsung-sharp-sans-cufonfonts-webfont/samsungsharpsans-medium.woff")
+      format("woff");
+}
+
+@font-face {
   font-family: SamsungBold;
   font-style: normal;
   font-weight: normal;
-  src: local('Samsung Sharp Sans Bold'), url('../font/samsung-sharp-sans-cufonfonts-webfont/samsungsharpsans-bold.woff') format('woff');
-  }
-
+  src: local("Samsung Sharp Sans Bold"),
+    url("../font/samsung-sharp-sans-cufonfonts-webfont/samsungsharpsans-bold.woff")
+      format("woff");
+}
 
 * {
   margin: 0;
@@ -65,14 +68,13 @@ html {
     display: none;
   }
 
-
   .nav-container {
     grid-column: 2/7;
 
     nav {
       height: 100px;
     }
-    
+
     ul {
       position: absolute;
       left: 50%;
@@ -97,15 +99,15 @@ html {
         }
       }
 
-    // Classes to use in js to choose selected tab
+      // Classes to use in js to choose selected tab
       .nav-not-selected {
         color: $text-secondary-color;
       }
-      
+
       .nav-not-selected:hover {
         color: $text-hover-color;
       }
-      
+
       .nav-selected {
         color: $text-base-color;
         font-family: SamsungMedium;
@@ -124,7 +126,6 @@ html {
         color: $text-dark-hover-color;
       }
     }
-
   }
 
   h1 {
@@ -149,6 +150,16 @@ html {
   }
 }
 
+#program {
+  grid-template-rows: repeat(5, auto);
+
+  img {
+    grid-row: 3;
+    grid-column: 3/6;
+    margin: auto;
+  }
+}
+
 // Background for where-, hotel- and corona-section
 .where-hotel-corona-container {
   background: rgb(189, 198, 183);
@@ -157,7 +168,6 @@ html {
     rgba(189, 198, 183, 1) 35%,
     rgba(151, 157, 134, 1) 100%
   );
-
 }
 
 // Properties for where
@@ -186,7 +196,7 @@ html {
       font-size: 15px;
       padding: 3px;
     }
-    
+
     .where-text-parts {
       margin-top: 40px;
       text-align: center;
@@ -196,7 +206,7 @@ html {
         display: block;
         padding-top: 10px;
         font-size: 14px;
-        color:  rgb(79, 113, 187);
+        color: rgb(79, 113, 187);
       }
     }
 
@@ -211,11 +221,11 @@ html {
 
 // Properties for sticky border to navbar
 #sticky-nav {
-  width:100%;
+  width: 100%;
   height: 65px;
   z-index: 9;
   visibility: hidden;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 // Class given to nav-bar in js
@@ -239,21 +249,21 @@ html {
     grid-column: 3/6;
     grid-row: 4;
 
-      a {
-        text-decoration: none;
-        font-family: SamsungMedium;
-        color: white;
-        opacity: .6;
+    a {
+      text-decoration: none;
+      font-family: SamsungMedium;
+      color: white;
+      opacity: 0.6;
 
-        h3 {
-          opacity: .6;
-          font-size: 30px;
-        }
+      h3 {
+        opacity: 0.6;
+        font-size: 30px;
+      }
 
       img {
         width: 250px;
         filter: invert(1);
-        opacity: .6;
+        opacity: 0.6;
         border-radius: 20px;
 
         &:hover {
@@ -272,9 +282,7 @@ html {
       &:hover img {
         opacity: 1;
       }
-
     }
-
   }
 }
 
@@ -312,7 +320,7 @@ html {
 
       img {
         width: 110px;
-        transition: all .1s ease-in;
+        transition: all 0.1s ease-in;
 
         &:hover {
           width: 115px;
@@ -335,8 +343,6 @@ html {
       grid-column: 5;
     }
 
-
-
     .hotel-vertical-line {
       border-left: 2px solid $text-dark-second-color;
       height: 225px;
@@ -350,8 +356,6 @@ html {
     #hotel-vertical-line2 {
       grid-column: 4;
     }
-
-    
   }
 }
 
@@ -366,7 +370,7 @@ html {
     grid-row: 1/-1;
     z-index: 2;
     background-color: black;
-    opacity: .5;
+    opacity: 0.5;
   }
 
   #contact-info {
@@ -394,7 +398,7 @@ html {
         padding-bottom: 20px;
       }
     }
-    
+
     .center {
       text-align: center;
     }
@@ -403,12 +407,12 @@ html {
 
 #corona-container {
   grid-template-rows: repeat(5, auto);
-  
+
   #corona-info {
     font-family: SamsungRegular;
     grid-row: 3;
     grid-column: 3/6;
     text-align: center;
     font-size: 18px;
-}
+  }
 }

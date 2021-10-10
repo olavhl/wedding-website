@@ -141,6 +141,20 @@ html {
   z-index: 1;
 }
 
+#program {
+  -ms-grid-rows: (auto)[5];
+      grid-template-rows: repeat(5, auto);
+}
+
+#program img {
+  -ms-grid-row: 3;
+  grid-row: 3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 3;
+  grid-column: 3/6;
+  margin: auto;
+}
+
 .where-hotel-corona-container {
   background: #bdc6b7;
   background: -webkit-gradient(linear, left top, right top, color-stop(35%, #bdc6b7), to(#979d86));
@@ -154,15 +168,6 @@ html {
   display: grid;
   -ms-grid-rows: (auto)[8];
       grid-template-rows: repeat(8, auto);
-}
-
-#where-container h2 {
-  grid-column: 3/6;
-  margin: auto;
-  
-  grid-row: 3;
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 3;
 }
 
 #where-container #where-info-box {
@@ -195,7 +200,6 @@ html {
 
 #where-container #where-info-box .where-text-parts {
   margin-top: 40px;
-  width: 400px;
   text-align: center;
 }
 
@@ -220,8 +224,8 @@ html {
   height: 65px;
   z-index: 9;
   visibility: hidden;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .sticky {
@@ -255,11 +259,11 @@ html {
   text-decoration: none;
   font-family: SamsungMedium;
   color: white;
-  opacity: .6;
+  opacity: 0.6;
 }
 
 #wishlist-container #wishlist-image-container a h3 {
-  opacity: .6;
+  opacity: 0.6;
   font-size: 30px;
 }
 
@@ -267,7 +271,7 @@ html {
   width: 250px;
   -webkit-filter: invert(1);
           filter: invert(1);
-  opacity: .6;
+  opacity: 0.6;
   border-radius: 20px;
 }
 
@@ -334,8 +338,8 @@ html {
 
 #hotel-container #hotels-box .hotel-boxes img {
   width: 110px;
-  -webkit-transition: all .1s ease-in;
-  transition: all .1s ease-in;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
 }
 
 #hotel-container #hotels-box .hotel-boxes img:hover {
@@ -390,7 +394,7 @@ html {
   grid-row: 1/-1;
   z-index: 2;
   background-color: black;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 #contact-container #contact-info {

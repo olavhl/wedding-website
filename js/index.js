@@ -1,5 +1,6 @@
 // Declearing variables for containers
 var heroContainer = document.getElementById("hero-container");
+var programContainer = document.getElementById("program");
 var whereContainer = document.getElementById("where-container");
 var wishlistContainer = document.getElementById("wishlist-container");
 var hotelContainer = document.getElementById("hotel-container");
@@ -8,6 +9,7 @@ var coronaContainer = document.getElementById("corona-container");
 
 // Variables for navbar
 var navHome = document.getElementById("nav-home");
+var navProgram = document.getElementById("nav-program");
 var navWhere = document.getElementById("nav-where");
 var navWishlist = document.getElementById("nav-wishlist");
 var navHotel = document.getElementById("nav-hotel");
@@ -29,6 +31,7 @@ window.addEventListener("scroll", () => {
   var thirdInnerHight = innerHeight * 3;
   var fourthInnerHight = innerHeight * 4;
   var fifthInnerHight = innerHeight * 5;
+  var sixthInnerHight = innerHeight * 6;
   var topYoffsett = window.pageYOffset;
 
   // Getting width of screen to prevent sticky nav to
@@ -49,7 +52,7 @@ window.addEventListener("scroll", () => {
 
   // Do this if on a desktop
   if (offsetWidth > 450) {
-    if (topYoffsett >= fifthInnerHight - 40) {
+    if (topYoffsett >= sixthInnerHight - 40) {
       changeColorNav(
         navCorona,
         "nav-dark-selected",
@@ -58,7 +61,7 @@ window.addEventListener("scroll", () => {
         "nav-not-selected"
       );
       changeNavColorGreen();
-    } else if (topYoffsett >= fourthInnerHight - 40) {
+    } else if (topYoffsett >= fifthInnerHight - 40) {
       changeColorNav(
         navContact,
         "nav-selected",
@@ -67,7 +70,7 @@ window.addEventListener("scroll", () => {
         "nav-dark-not-selected"
       );
       changeNavColorBlack();
-    } else if (topYoffsett >= thirdInnerHight - 40) {
+    } else if (topYoffsett >= fourthInnerHight - 40) {
       changeColorNav(
         navHotel,
         "nav-dark-selected",
@@ -76,7 +79,7 @@ window.addEventListener("scroll", () => {
         "nav-not-selected"
       );
       changeNavColorGreen();
-    } else if (topYoffsett >= secondInnerHight - 40) {
+    } else if (topYoffsett >= thirdInnerHight - 40) {
       changeColorNav(
         navWishlist,
         "nav-selected",
@@ -85,9 +88,18 @@ window.addEventListener("scroll", () => {
         "nav-dark-not-selected"
       );
       changeNavColorBlack();
-    } else if (topYoffsett >= innerHeightOfWindow - 40) {
+    } else if (topYoffsett >= secondInnerHight - 40) {
       changeColorNav(
         navWhere,
+        "nav-dark-selected",
+        "nav-dark-not-selected",
+        "nav-selected",
+        "nav-not-selected"
+      );
+      changeNavColorGreen();
+    } else if (topYoffsett >= innerHeightOfWindow - 40) {
+      changeColorNav(
+        navProgram,
         "nav-dark-selected",
         "nav-dark-not-selected",
         "nav-selected",

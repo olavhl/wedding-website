@@ -134,13 +134,7 @@ window.addEventListener("scroll", () => {
 
 // Function for changing color and size for selected tab in nav
 // for desktop and phone
-function changeColorNav(
-  selectedId,
-  selectedClass,
-  notSelectedClass,
-  removedClass1,
-  removedClass2
-) {
+function changeColorNav(selectedId, selectedClass, notSelectedClass) {
   // Fetching all list items
   var liElements = document
     .getElementById("nav-container")
@@ -148,12 +142,15 @@ function changeColorNav(
 
   for (var i = 0; i < liElements.length; i++) {
     if (liElements[i] !== selectedId) {
-      liElements[i].classList.remove(removedClass2);
-      liElements[i].classList.remove(removedClass1);
+      liElements[i].classList.remove("nav-selected");
+      liElements[i].classList.remove("nav-dark-selected");
+      liElements[i].classList.remove("nav-not-selected");
+      liElements[i].classList.remove("nav-dark-not-selected");
       liElements[i].classList.add(notSelectedClass);
     } else {
       selectedId.classList.add(selectedClass);
-      selectedId.classList.remove(removedClass2);
+      liElements[i].classList.remove("nav-not-selected");
+      liElements[i].classList.remove("nav-dark-not-selected");
     }
   }
 }

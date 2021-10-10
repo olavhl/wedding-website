@@ -102,10 +102,12 @@ html {
       // Classes to use in js to choose selected tab
       .nav-not-selected {
         color: $text-secondary-color;
+        font-family: SamsungRegular;
       }
 
       .nav-not-selected:hover {
         color: $text-hover-color;
+        font-family: SamsungRegular;
       }
 
       .nav-selected {
@@ -120,6 +122,7 @@ html {
 
       .nav-dark-not-selected {
         color: $text-dark-second-color;
+        font-family: SamsungRegular;
       }
 
       .nav-dark-not-selected:hover {

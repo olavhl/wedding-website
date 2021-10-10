@@ -96,10 +96,12 @@ html {
 
 .hero-container .nav-container ul .nav-not-selected {
   color: #beb6b6;
+  font-family: SamsungRegular;
 }
 
 .hero-container .nav-container ul .nav-not-selected:hover {
   color: #e4dede;
+  font-family: SamsungRegular;
 }
 
 .hero-container .nav-container ul .nav-selected {
@@ -114,6 +116,7 @@ html {
 
 .hero-container .nav-container ul .nav-dark-not-selected {
   color: #646464;
+  font-family: SamsungRegular;
 }
 
 .hero-container .nav-container ul .nav-dark-not-selected:hover {

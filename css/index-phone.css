@@ -30,15 +30,15 @@
     height: 100%;
     background-color: #000;
     z-index: 10;
-    opacity: .8;
+    opacity: 0.8;
     -webkit-backdrop-filter: blur(2px);
             backdrop-filter: blur(2px);
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
-    -webkit-transition: -webkit-transform .35s ease-in;
-    transition: -webkit-transform .35s ease-in;
-    transition: transform .35s ease-in;
-    transition: transform .35s ease-in, -webkit-transform .35s ease-in;
+    -webkit-transition: -webkit-transform 0.35s ease-in;
+    transition: -webkit-transform 0.35s ease-in;
+    transition: transform 0.35s ease-in;
+    transition: transform 0.35s ease-in, -webkit-transform 0.35s ease-in;
   }
   .hero-container .nav-container nav {
     height: 100%;
@@ -79,6 +79,13 @@
   }
   #sticky-nav {
     display: none;
+  }
+  #program img {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 7;
+    grid-column: 1/8;
+    margin: auto;
+    height: 70vh;
   }
   #where-container {
     -ms-grid-row: 2;
@@ -153,14 +160,14 @@
         align-content: center;
   }
   #wishlist-container #wishlist-image-container a {
-    opacity: .9;
+    opacity: 0.9;
   }
   #wishlist-container #wishlist-image-container a img {
     width: 170px;
-    opacity: .9;
+    opacity: 0.9;
   }
   #wishlist-container #wishlist-image-container a h3 {
-    opacity: .9;
+    opacity: 0.9;
   }
   #hotel-container {
     -ms-grid-row: 4;

@@ -116,16 +116,18 @@ window.addEventListener("scroll", () => {
       );
     }
   } else {
-    if (topYoffsett >= fifthInnerHight - 40) {
+    if (topYoffsett >= sixthInnerHight - 40) {
       changeColorNavPhone(navCorona);
-    } else if (topYoffsett >= fourthInnerHight - 40) {
+    } else if (topYoffsett >= fifthInnerHight - 40) {
       changeColorNavPhone(navContact);
-    } else if (topYoffsett >= thirdInnerHight - 40) {
+    } else if (topYoffsett >= fourthInnerHight - 40) {
       changeColorNavPhone(navHotel);
-    } else if (topYoffsett >= secondInnerHight - 40) {
+    } else if (topYoffsett >= thirdInnerHight - 40) {
       changeColorNavPhone(navWishlist);
-    } else if (topYoffsett >= innerHeightOfWindow - 40) {
+    } else if (topYoffsett >= secondInnerHight - 40) {
       changeColorNavPhone(navWhere);
+    } else if (topYoffsett >= innerHeightOfWindow - 40) {
+      changeColorNavPhone(navProgram);
     } else {
       changeColorNavPhone(navHome);
     }

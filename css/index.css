@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: SamsungRegular;
   font-style: normal;
@@ -165,7 +166,7 @@ html {
   background: linear-gradient(90deg, #bdc6b7 35%, #979d86 100%);
 }
 
-#where-container {
+#adresser {
   -ms-grid-row: 2;
   grid-row: 2;
   display: -ms-grid;
@@ -174,7 +175,7 @@ html {
       grid-template-rows: repeat(8, auto);
 }
 
-#where-container #where-info-box {
+#adresser #where-info-box {
   width: 800px;
   height: 30vh;
   position: relative;
@@ -192,29 +193,29 @@ html {
       grid-template-columns: auto 3px auto;
 }
 
-#where-container #where-info-box h2 {
+#adresser #where-info-box h2 {
   font-size: 17px;
   font-family: SamsungMedium;
 }
 
-#where-container #where-info-box p {
+#adresser #where-info-box p {
   font-size: 15px;
   padding: 3px;
 }
 
-#where-container #where-info-box .where-text-parts {
+#adresser #where-info-box .where-text-parts {
   margin-top: 40px;
   text-align: center;
 }
 
-#where-container #where-info-box .where-text-parts a {
+#adresser #where-info-box .where-text-parts a {
   display: block;
   padding-top: 10px;
   font-size: 14px;
   color: #4f71bb;
 }
 
-#where-container #where-info-box #where-vertical-line {
+#adresser #where-info-box #where-vertical-line {
   border-left: 2px solid #646464;
   height: 225px;
   -ms-grid-column: 2;
@@ -239,7 +240,7 @@ html {
           backdrop-filter: blur(10px);
 }
 
-#wishlist-container {
+#ønskeliste {
   -ms-grid-row: 3;
   grid-row: 3;
   background: url("../img/where-desktop.jpg") no-repeat center center;
@@ -250,7 +251,7 @@ html {
       grid-template-rows: repeat(6, auto);
 }
 
-#wishlist-container #wishlist-image-container {
+#ønskeliste #wishlist-image-container {
   text-align: center;
   -ms-grid-column: 3;
   -ms-grid-column-span: 3;
@@ -259,19 +260,19 @@ html {
   grid-row: 4;
 }
 
-#wishlist-container #wishlist-image-container a {
+#ønskeliste #wishlist-image-container a {
   text-decoration: none;
   font-family: SamsungMedium;
   color: white;
   opacity: 0.6;
 }
 
-#wishlist-container #wishlist-image-container a h3 {
+#ønskeliste #wishlist-image-container a h3 {
   opacity: 0.6;
   font-size: 30px;
 }
 
-#wishlist-container #wishlist-image-container a img {
+#ønskeliste #wishlist-image-container a img {
   width: 250px;
   -webkit-filter: invert(1);
           filter: invert(1);
@@ -279,23 +280,23 @@ html {
   border-radius: 20px;
 }
 
-#wishlist-container #wishlist-image-container a img:hover {
+#ønskeliste #wishlist-image-container a img:hover {
   opacity: 1;
 }
 
-#wishlist-container #wishlist-image-container a:hover {
+#ønskeliste #wishlist-image-container a:hover {
   opacity: 1;
 }
 
-#wishlist-container #wishlist-image-container a:hover h3 {
+#ønskeliste #wishlist-image-container a:hover h3 {
   opacity: 1;
 }
 
-#wishlist-container #wishlist-image-container a:hover img {
+#ønskeliste #wishlist-image-container a:hover img {
   opacity: 1;
 }
 
-#hotel-container {
+#hoteller {
   -ms-grid-row: 4;
   grid-row: 4;
   display: -ms-grid;
@@ -304,7 +305,7 @@ html {
       grid-template-rows: repeat(9, auto);
 }
 
-#hotel-container #hotels-box {
+#hoteller #hotels-box {
   width: 800px;
   height: 30vh;
   margin: auto;
@@ -324,66 +325,66 @@ html {
           align-items: center;
 }
 
-#hotel-container #hotels-box p {
+#hoteller #hotels-box p {
   -ms-grid-column: 1;
   -ms-grid-column-span: 5;
   grid-column: 1/6;
 }
 
-#hotel-container #hotels-box p span {
+#hoteller #hotels-box p span {
   display: none;
 }
 
-#hotel-container #hotels-box .hotel-boxes {
+#hoteller #hotels-box .hotel-boxes {
   -ms-grid-row: 3;
   grid-row: 3;
   margin: 0 20px 0 20px;
 }
 
-#hotel-container #hotels-box .hotel-boxes img {
+#hoteller #hotels-box .hotel-boxes img {
   width: 110px;
   -webkit-transition: all 0.1s ease-in;
   transition: all 0.1s ease-in;
 }
 
-#hotel-container #hotels-box .hotel-boxes img:hover {
+#hoteller #hotels-box .hotel-boxes img:hover {
   width: 115px;
   -webkit-filter: brightness(1.5);
           filter: brightness(1.5);
 }
 
-#hotel-container #hotels-box #hotel-box1 img {
+#hoteller #hotels-box #hotel-box1 img {
   width: 95px;
 }
 
-#hotel-container #hotels-box #hotel-box3 {
+#hoteller #hotels-box #hotel-box3 {
   -ms-grid-column: 7;
   grid-column: 7;
 }
 
-#hotel-container #hotels-box #hotel-box4 {
+#hoteller #hotels-box #hotel-box4 {
   -ms-grid-column: 5;
   grid-column: 5;
 }
 
-#hotel-container #hotels-box .hotel-vertical-line {
+#hoteller #hotels-box .hotel-vertical-line {
   border-left: 2px solid #646464;
   height: 225px;
   -ms-grid-row: 3;
   grid-row: 3;
 }
 
-#hotel-container #hotels-box #hotel-vertical-line1 {
+#hoteller #hotels-box #hotel-vertical-line1 {
   -ms-grid-column: 2;
   grid-column: 2;
 }
 
-#hotel-container #hotels-box #hotel-vertical-line2 {
+#hoteller #hotels-box #hotel-vertical-line2 {
   -ms-grid-column: 4;
   grid-column: 4;
 }
 
-#contact-container {
+#kontakt {
   background: url("../img/contact.jpg") no-repeat center center;
   background-size: cover;
   z-index: 1;
@@ -391,7 +392,7 @@ html {
       grid-template-rows: repeat(8, 1fr);
 }
 
-#contact-container #cover-contact {
+#kontakt #cover-contact {
   -ms-grid-column: 1;
   -ms-grid-column-span: 7;
   grid-column: 1/8;
@@ -401,7 +402,7 @@ html {
   opacity: 0.5;
 }
 
-#contact-container #contact-info {
+#kontakt #contact-info {
   color: white;
   -ms-grid-column: 3;
   -ms-grid-column-span: 3;
@@ -414,34 +415,34 @@ html {
   z-index: 3;
 }
 
-#contact-container #contact-info #contact-wedders {
+#kontakt #contact-info #contact-wedders {
   text-align: center;
   padding: 50px;
 }
 
-#contact-container #contact-info #contact-wedders h3 {
+#kontakt #contact-info #contact-wedders h3 {
   padding-bottom: 20px;
 }
 
-#contact-container #contact-info #contact-toastmasters {
+#kontakt #contact-info #contact-toastmasters {
   text-align: center;
   padding: 50px;
 }
 
-#contact-container #contact-info #contact-toastmasters h4 {
+#kontakt #contact-info #contact-toastmasters h4 {
   padding-bottom: 20px;
 }
 
-#contact-container #contact-info .center {
+#kontakt #contact-info .center {
   text-align: center;
 }
 
-#corona-container {
+#info {
   -ms-grid-rows: (auto)[5];
       grid-template-rows: repeat(5, auto);
 }
 
-#corona-container #corona-info {
+#info #corona-info {
   font-family: SamsungRegular;
   -ms-grid-row: 3;
   grid-row: 3;

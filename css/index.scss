@@ -175,7 +175,7 @@ html {
 }
 
 // Properties for where
-#where-container {
+#adresser {
   grid-row: 2;
   display: grid;
   grid-template-rows: repeat(8, auto);
@@ -241,7 +241,7 @@ html {
 }
 
 // Properties for wishlist
-#wishlist-container {
+#ønskeliste {
   grid-row: 3;
   background: url("../img/where-desktop.jpg") no-repeat center center;
   background-size: cover;
@@ -291,7 +291,7 @@ html {
 }
 
 // Properties for hotel
-#hotel-container {
+#hoteller {
   grid-row: 4;
   display: grid;
   grid-template-rows: repeat(9, auto);
@@ -363,7 +363,7 @@ html {
   }
 }
 
-#contact-container {
+#kontakt {
   background: url("../img/contact.jpg") no-repeat center center;
   background-size: cover;
   z-index: 1;
@@ -409,7 +409,7 @@ html {
   }
 }
 
-#corona-container {
+#info {
   grid-template-rows: repeat(5, auto);
 
   #corona-info {

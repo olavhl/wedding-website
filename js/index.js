@@ -1,11 +1,11 @@
 // Declearing variables for containers
-var heroContainer = document.getElementById("hero-container");
+var heroContainer = document.getElementById("hjem");
 var programContainer = document.getElementById("program");
-var whereContainer = document.getElementById("where-container");
-var wishlistContainer = document.getElementById("wishlist-container");
-var hotelContainer = document.getElementById("hotel-container");
-var contactContainer = document.getElementById("contact-container");
-var coronaContainer = document.getElementById("corona-container");
+var whereContainer = document.getElementById("adresser");
+var wishlistContainer = document.getElementById("ønskeliste");
+var hotelContainer = document.getElementById("hoteller");
+var contactContainer = document.getElementById("kontakt");
+var coronaContainer = document.getElementById("info");
 
 // Variables for navbar
 var navHome = document.getElementById("nav-home");

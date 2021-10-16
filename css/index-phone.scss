@@ -100,7 +100,7 @@ $text-dark-hover-color: rgb(68, 68, 68);
     }
   }
 
-  #where-container {
+  #adresser {
     grid-row: 2;
     display: grid;
     grid-template-rows: 10% 75% 15%;
@@ -152,7 +152,7 @@ $text-dark-hover-color: rgb(68, 68, 68);
     }
   }
 
-  #wishlist-container {
+  #ønskeliste {
     background: url("../img/where-phone.jpg") no-repeat center center;
     background-size: cover;
 
@@ -176,7 +176,7 @@ $text-dark-hover-color: rgb(68, 68, 68);
     }
   }
 
-  #hotel-container {
+  #hoteller {
     grid-row: 4;
     display: grid;
     grid-template-rows: repeat(8, auto);
@@ -297,7 +297,7 @@ $text-dark-hover-color: rgb(68, 68, 68);
     }
   }
 
-  #contact-container {
+  #kontakt {
     #contact-info {
       grid-column: 2/7;
       grid-row: 2/6;
@@ -316,7 +316,7 @@ $text-dark-hover-color: rgb(68, 68, 68);
     }
   }
 
-  #corona-container {
+  #info {
     #corona-info {
       font-family: SamsungRegular;
       grid-column: 2/7;

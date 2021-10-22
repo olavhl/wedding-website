@@ -179,6 +179,14 @@ html {
   grid-row: 2;
   display: grid;
   grid-template-rows: repeat(8, auto);
+  //background: rgb(158,166,153);
+  //background: linear-gradient(90deg, rgba(158,166,153,1) 30%, rgba(122,130,103,1) 100%);
+  background: rgb(189, 198, 183);
+  background: linear-gradient(
+    45deg,
+    rgba(189, 198, 183, 1) 0%,
+    rgb(143, 150, 126) 100%
+  );
 
   #where-info-box {
     width: 800px;

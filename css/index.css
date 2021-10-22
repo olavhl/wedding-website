@@ -173,6 +173,8 @@ html {
   display: grid;
   -ms-grid-rows: (auto)[8];
       grid-template-rows: repeat(8, auto);
+  background: #bdc6b7;
+  background: linear-gradient(45deg, #bdc6b7 0%, #8f967e 100%);
 }
 
 #adresser #where-info-box {

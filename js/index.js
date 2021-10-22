@@ -1,13 +1,15 @@
 // Declearing variables for containers
-var heroContainer = document.getElementById("hero-container");
-var whereContainer = document.getElementById("where-container");
-var wishlistContainer = document.getElementById("wishlist-container");
-var hotelContainer = document.getElementById("hotel-container");
-var contactContainer = document.getElementById("contact-container");
-var coronaContainer = document.getElementById("corona-container");
+var heroContainer = document.getElementById("hjem");
+var programContainer = document.getElementById("program");
+var whereContainer = document.getElementById("adresser");
+var wishlistContainer = document.getElementById("ønskeliste");
+var hotelContainer = document.getElementById("hoteller");
+var contactContainer = document.getElementById("kontakt");
+var coronaContainer = document.getElementById("info");
 
 // Variables for navbar
 var navHome = document.getElementById("nav-home");
+var navProgram = document.getElementById("nav-program");
 var navWhere = document.getElementById("nav-where");
 var navWishlist = document.getElementById("nav-wishlist");
 var navHotel = document.getElementById("nav-hotel");
@@ -29,6 +31,7 @@ window.addEventListener("scroll", () => {
   var thirdInnerHight = innerHeight * 3;
   var fourthInnerHight = innerHeight * 4;
   var fifthInnerHight = innerHeight * 5;
+  var sixthInnerHight = innerHeight * 6;
   var topYoffsett = window.pageYOffset;
 
   // Getting width of screen to prevent sticky nav to
@@ -36,7 +39,7 @@ window.addEventListener("scroll", () => {
   var offsetWidth = window.innerWidth;
 
   if (topYoffsett > sticky - 40) {
-    if (offsetWidth > 450){
+    if (offsetWidth > 450) {
       stickyNav.classList.add("sticky");
       stickyNav.style.visibility = "visible";
       stickyNav.style.position = "fixed";
@@ -47,10 +50,9 @@ window.addEventListener("scroll", () => {
     stickyNav.style.position = "absolute";
   }
 
-
   // Do this if on a desktop
-  if (offsetWidth > 450){
-    if (topYoffsett >= fifthInnerHight - 40){
+  if (offsetWidth > 450) {
+    if (topYoffsett >= sixthInnerHight - 40) {
       changeColorNav(
         navCorona,
         "nav-dark-selected",
@@ -59,7 +61,7 @@ window.addEventListener("scroll", () => {
         "nav-not-selected"
       );
       changeNavColorGreen();
-    } else if (topYoffsett >= fourthInnerHight - 40) {
+    } else if (topYoffsett >= fifthInnerHight - 40) {
       changeColorNav(
         navContact,
         "nav-selected",
@@ -68,7 +70,7 @@ window.addEventListener("scroll", () => {
         "nav-dark-not-selected"
       );
       changeNavColorBlack();
-    } else if (topYoffsett >= thirdInnerHight - 40) {
+    } else if (topYoffsett >= fourthInnerHight - 40) {
       changeColorNav(
         navHotel,
         "nav-dark-selected",
@@ -77,7 +79,7 @@ window.addEventListener("scroll", () => {
         "nav-not-selected"
       );
       changeNavColorGreen();
-    } else if (topYoffsett >= secondInnerHight - 40) {
+    } else if (topYoffsett >= thirdInnerHight - 40) {
       changeColorNav(
         navWishlist,
         "nav-selected",
@@ -86,9 +88,18 @@ window.addEventListener("scroll", () => {
         "nav-dark-not-selected"
       );
       changeNavColorBlack();
-    } else if (topYoffsett >= innerHeightOfWindow - 40) {
+    } else if (topYoffsett >= secondInnerHight - 40) {
       changeColorNav(
         navWhere,
+        "nav-dark-selected",
+        "nav-dark-not-selected",
+        "nav-selected",
+        "nav-not-selected"
+      );
+      changeNavColorGreen();
+    } else if (topYoffsett >= innerHeightOfWindow - 40) {
+      changeColorNav(
+        navProgram,
         "nav-dark-selected",
         "nav-dark-not-selected",
         "nav-selected",
@@ -105,16 +116,18 @@ window.addEventListener("scroll", () => {
       );
     }
   } else {
-    if (topYoffsett >= fifthInnerHight - 40){
+    if (topYoffsett >= sixthInnerHight - 40) {
       changeColorNavPhone(navCorona);
-    } else if (topYoffsett >= fourthInnerHight - 40) {
+    } else if (topYoffsett >= fifthInnerHight - 40) {
       changeColorNavPhone(navContact);
-    } else if (topYoffsett >= thirdInnerHight - 40) {
+    } else if (topYoffsett >= fourthInnerHight - 40) {
       changeColorNavPhone(navHotel);
-    } else if (topYoffsett >= secondInnerHight - 40) {
+    } else if (topYoffsett >= thirdInnerHight - 40) {
       changeColorNavPhone(navWishlist);
-    } else if (topYoffsett >= innerHeightOfWindow - 40) {
+    } else if (topYoffsett >= secondInnerHight - 40) {
       changeColorNavPhone(navWhere);
+    } else if (topYoffsett >= innerHeightOfWindow - 40) {
+      changeColorNavPhone(navProgram);
     } else {
       changeColorNavPhone(navHome);
     }
@@ -123,13 +136,7 @@ window.addEventListener("scroll", () => {
 
 // Function for changing color and size for selected tab in nav
 // for desktop and phone
-function changeColorNav(
-  selectedId,
-  selectedClass,
-  notSelectedClass,
-  removedClass1,
-  removedClass2
-) {
+function changeColorNav(selectedId, selectedClass, notSelectedClass) {
   // Fetching all list items
   var liElements = document
     .getElementById("nav-container")
@@ -137,36 +144,39 @@ function changeColorNav(
 
   for (var i = 0; i < liElements.length; i++) {
     if (liElements[i] !== selectedId) {
-      liElements[i].classList.remove(removedClass2);
-      liElements[i].classList.remove(removedClass1);
+      liElements[i].classList.remove("nav-selected");
+      liElements[i].classList.remove("nav-dark-selected");
+      liElements[i].classList.remove("nav-not-selected");
+      liElements[i].classList.remove("nav-dark-not-selected");
       liElements[i].classList.add(notSelectedClass);
-
     } else {
       selectedId.classList.add(selectedClass);
-      selectedId.classList.remove(removedClass2);
+      liElements[i].classList.remove("nav-not-selected");
+      liElements[i].classList.remove("nav-dark-not-selected");
     }
   }
 }
 
 // Function for changing color of nav for PHONE
-function changeColorNavPhone (selectedId) {
+function changeColorNavPhone(selectedId) {
   var liElements = document
     .getElementById("nav-container")
     .querySelectorAll("li");
 
-    for (var i = 0; i < liElements.length; i++) {
-      if (liElements[i] !== selectedId) {
-        liElements[i].classList.add("nav-not-selected");
-        liElements[i].classList.remove("nav-selected");
-      } else {
-        selectedId.classList.add("nav-selected");
-      }
+  for (var i = 0; i < liElements.length; i++) {
+    if (liElements[i] !== selectedId) {
+      liElements[i].classList.add("nav-not-selected");
+      liElements[i].classList.remove("nav-selected");
+    } else {
+      selectedId.classList.add("nav-selected");
     }
+  }
 }
 
 function changeNavColorGreen() {
   stickyNav.style.opacity = "0.9";
-  stickyNav.style.background = "linear-gradient(90deg, rgba(189, 198, 183, 1) 35%, rgba(151, 157, 134, 1) 100%)"
+  stickyNav.style.background =
+    "linear-gradient(90deg, rgba(189, 198, 183, 1) 35%, rgba(151, 157, 134, 1) 100%)";
 }
 
 function changeNavColorBlack() {
@@ -180,42 +190,42 @@ const navSlide = () => {
   const nav = document.querySelector(".nav-container");
   const navLinks = document.querySelectorAll(".nav-links a");
 
-  burgerMenu.addEventListener('click', () => {
-
+  burgerMenu.addEventListener("click", () => {
     // Toggle nav
-    if (nav.classList.contains === 'nav-active') {
-      nav.classList.remove('nav-active');
+    if (nav.classList.contains === "nav-active") {
+      nav.classList.remove("nav-active");
     } else {
-      nav.classList.toggle('nav-active');
+      nav.classList.toggle("nav-active");
     }
 
     // Animate links
     navLinks.forEach((link, index) => {
-      if (link.style.animation) { 
-        link.style.animation = '';
+      if (link.style.animation) {
+        link.style.animation = "";
       } else {
-        link.style.animation = `navLinksFade .5s ease forwards ${index / 8 + 0.2}s`;
+        link.style.animation = `navLinksFade .5s ease forwards ${
+          index / 8 + 0.2
+        }s`;
       }
     });
-
   });
-}
+};
 
 const removeSlide = () => {
   const navLinks = document.querySelectorAll(".nav-links a");
-  const nav = document.querySelector(".nav-container")
+  const nav = document.querySelector(".nav-container");
 
   // Find a way to close element onclick
-  nav.addEventListener('click', () => {
-    nav.classList.toggle('nav-active');
+  nav.addEventListener("click", () => {
+    nav.classList.toggle("nav-active");
 
-    navLinks.forEach(link => {
-      if (link.style.animation) { 
-        link.style.animation = '';
+    navLinks.forEach((link) => {
+      if (link.style.animation) {
+        link.style.animation = "";
       }
     });
-});
-}
+  });
+};
 
 navSlide();
 removeSlide();
